@@ -1,0 +1,27 @@
+{
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/cucumber": "^4.0.7",
+    "@types/node": "^12.7.12",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.2",
+    "cucumber-pretty": "^6.0.0",
+    "cucumber-tsflow": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "ts-loader": "^6.2.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.13.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js -p default",
+    "watch-js": "yarn run build-js --watch",
+    "build-js": "webpack",
+    "build": "yarn run build-js"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.2"
+  }
+}

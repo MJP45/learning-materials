@@ -1,0 +1,28 @@
+<section>
+    <div *ngIf="isProject">
+        <div class="title project">
+            <h3 (click)="textBoxClick()">Project Summary  <fa-icon [icon]="faChevron"></fa-icon></h3>
+        </div>
+        <ul class="details-box" *ngIf="detailsIsOpen">
+            <li><span>ID: </span>{{ projectDetails.id }}</li>
+            <li><span>Status: </span>{{ projectDetails.status }}</li>
+            <li><span>Project Owner: </span>Barry Barryson</li>
+            <li><span>Project Start Date: </span>31/10/2019</li>
+            <li><span>Technologies: </span>Angular, TypeScript</li>
+            <li><span>Team Members: </span>Colin, Deborah, Pippa</li>
+            <li><span>Description: </span>An Angular project to explore API usage and Services. Developed using BDD</li>
+        </ul>
+    </div>
+    <div *ngIf="!isProject">
+        <div class="title">
+            <h3 (click)="textBoxClick()">Feature Summary  <app-feature-status-and-sign-off [feature]="feature" [featureTitleFontSize]="20" [isViewingSnapshot]="isViewingSnapshot"></app-feature-status-and-sign-off> <fa-icon [icon]="faChevron"></fa-icon></h3>
+        </div>
+        <ul class="details-box" *ngIf="detailsIsOpen">
+            <li>{{ featureDetails.description }}</li>
+            <li><span id="scenario-header">Scenarios:</span></li>
+            <ul>
+                <li *ngFor="let detail of featureDetails.scenarios|keyvalue"> {{detail.value}} </li>
+            </ul>  
+        </ul>
+    </div>
+</section>

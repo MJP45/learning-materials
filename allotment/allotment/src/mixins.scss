@@ -1,0 +1,154 @@
+@import "src/variables.scss";
+
+@mixin sm {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin primary-heading {
+  font-size: 3em;
+  color: black;
+  margin: reset;
+}
+
+@mixin flex-row($alignment) {
+  display: flex;
+  flex-direction: row;
+  justify-content: $alignment;
+}
+
+@mixin flex-column ($alignment) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $alignment;
+}
+
+@mixin primary-button {
+  height: 36px;
+  padding: 0px $base-spacing * 1.5;
+  margin-left: $base-spacing;
+  background-color: $primary-color;
+  color: $light-gray;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+@mixin input-field {
+  border: solid lightgray 1px;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.invalid {
+    border-left: solid 5px red;
+  }
+
+  &.valid {
+    border-left: solid 5px limegreen;
+  }
+}
+
+@mixin login-button {
+  border-radius: 5px;
+  height: 50px;
+  background-color: limegreen;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+
+  &:disabled {
+    border: solid rgb(250, 53, 4) 2px;
+    background-color: rgb(250, 118, 94);
+  }
+}
+
+@mixin form {
+  color: white;
+  background: $secondary-color;
+  border-radius: 2px;
+}
+
+@mixin accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  border-radius: $base-spacing;
+  grid-gap: $base-spacing;
+
+  @media screen and (max-width:500px) {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
+
+}
+
+@mixin accordion-card {
+  padding: $base-spacing * 2;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $secondary-color;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+
+  &:hover {
+    background-color: lighten($secondary-color, 5%);
+  }
+}
+
+@mixin accordion-card-statuses {
+  background-color: $dark-gray;
+  border-radius: 2px;
+  padding: $base-spacing;
+  text-align: center;
+  width: 100%;
+
+  &.passed {
+    background-color: $cta-color;
+  }
+
+  &.failed {
+    background-color: red;
+  }
+}
+
+@mixin accordion-card-description {
+    background-color: white;
+    color: $secondary-color;
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    padding: $base-spacing * 2;
+    @media screen and (max-width: 500px) {
+      height: 60%;
+    }
+}
+
+@mixin accordion-card-header {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  height: 25%;
+
+  &:nth-of-type(2) {
+    height: 15%;
+  }
+}

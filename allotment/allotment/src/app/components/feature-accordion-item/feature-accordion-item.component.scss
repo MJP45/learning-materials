@@ -1,0 +1,62 @@
+@import "../../../variables";
+@import "../../../mixins.scss";
+
+.acc-piece {
+  background-color: $secondary-color;
+  padding: 0px $base-spacing * 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 2px;
+  color: white;
+  height: 70px;
+  cursor: pointer;
+
+  // refuses to inherit width from parent. Quick fix to remove bug from master
+  width: calc(100% - 60px);
+
+  &:hover {
+    background-color: lighten($secondary-color, 5%);
+  }
+
+  h3 {
+    .scenario-name {
+      display: block;
+      font-size: 20px;
+    }
+
+    &.scenario-count {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: $primary-color;
+      opacity: 1;
+      width: auto;
+      text-align: center;
+      padding: $base-spacing;
+      border-radius: 2px;
+
+      fa-icon {
+        margin-left: $base-spacing;
+        margin-top: $base-spacing * 0.3;
+        font-size: 14px;
+      }
+
+      &:hover {
+        fa-icon {
+          transform: translate($base-spacing * 0.4);
+        }
+      }
+    }
+
+    width: 20%;
+
+    &:first-of-type {
+      width: 30%;
+    }
+  }
+}

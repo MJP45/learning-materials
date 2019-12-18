@@ -1,0 +1,26 @@
+<section class="container">
+    <form #loginForm="ngForm" (ngSubmit)="handleLoginForm(loginForm.value)">
+        <h2>Login</h2>
+        <fa-icon [icon]="faSignInAlt"></fa-icon>
+        <label for="email"></label>
+        <input type="email" name="email" id="email" #email="ngModel" ngModel required email [class.valid]="email.valid && !email.pristine"
+            [class.invalid]="email.invalid && !email.pristine" placeholder="*Email" class="qa-email">
+        <div *ngIf="!email.pristine && email.errors">
+            <p class="error" *ngIf="email.errors['required']">Email is required</p>
+            <p class="error" *ngIf="email.errors['email']">Email is invalid</p>
+        </div>
+        <label for="password"></label>
+        <input type="password" class="qa-password" placeholder="*Password" minlength="6" maxlength="12" name="password" #password="ngModel" ngModel
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required password [class.valid]="password.valid"
+            [class.invalid]="password.invalid && !password.pristine">
+        <div *ngIf="!password.pristine && password.invalid">
+            <p class="error" *ngIf="password.errors['required']">Password is required</p>
+            <p class="error" *ngIf="password.errors['pattern']">Password must contain one uppercase, one lowercase character and one number
+            </p>
+            <p class="error" *ngIf="password.errors['minlength'] && !password.errors['pattern']">Password must be minimum 6
+            characters</p>
+        </div>
+        <input class="qa-button" type="submit" [disabled]="loginForm.invalid" [routerLink]="['/home']">
+        <p routerLink="/user-registration" class="link">Create new user<fa-icon [icon]="faUser"></fa-icon></p>
+    </form>
+</section>

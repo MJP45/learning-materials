@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+.main-data {
+  padding: $base-spacing * 2 $base-spacing * 3;
+
+  .searchbar-project-title-container {
+
+    @include flex-row(space-between);
+    flex-wrap: wrap;
+    padding-bottom: $base-spacing * 2;
+
+    h2 {
+      text-align: left;
+      font-size: 2em;
+
+      @include sm {
+        padding-bottom: $base-spacing * 2;
+      }
+    }
+  }
+
+}

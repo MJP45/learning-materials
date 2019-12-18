@@ -1,0 +1,45 @@
+body {
+    background-color: #ffe6ff;
+    background-image: linear-gradient(to right, #ff8080, #ffcc80, #ffe680, #9fdf9f, #8080ff, #aa80ff, #bf80ff);
+    ;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+   }
+   
+   .welcome {
+       color: White;
+   }
+   
+   h1, h2 {
+     color: #666699;
+    }
+    
+   h1 {
+     border-style: ridge;
+     border-width: 5px;
+     border-radius: 15px;
+     border-color: #666699;
+   }
+   
+    .button {
+     background-color: #ad33ff;
+     border: 0.5em;
+     border-radius: 15px;
+     color: white;
+     padding: 15px;
+     text-align: center;
+     font-size: 14px;
+     cursor: pointer;
+   }
+   
+   .button:hover {
+     background-color: #d966ff;
+   }
+   
+   .affirmation {color: white
+   }
+   
+   .BDimage:hover {
+     opacity: 0.5;
+     filter: alpha(opacity=50);
+   }

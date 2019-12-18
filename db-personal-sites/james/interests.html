@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>James' Interests</title>
+    <link rel="stylesheet" href="styles_interests.css">
+</head>
+<body>
+    <div class="side_bar">
+        <div class="portrait">
+            <img src="img/Home_James.png" alt="Portrait">
+        </div>
+        <nav class="nav_list">
+            <ul class="nav">
+                <li class="nav_list"><a href="index.html" class="home">Welcome</a></li>
+                <li class="nav_list"><a href="about.html" class="about">About</a></li>
+                <li class="nav_list"><a href="interests.html"  class="hobbies">Interests</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <article class="article">
+            <h2>James' Interests</h2>
+            <div class="txt_box">
+                <p class="first_p"><span class = "first_word">Welcome</span> to the “Interests” section of my website. Let's play a game!</p>
+                <p class="first_p"> Click the sections in the left hand box to find out more about me! To see what we interests we have in common, tick the boxes if we share an interest. When finished, click the button at the bottom of the page to see how many “James points” you win.</p>
+            </div>
+            
+            <br>
+
+            <div class=box_container>
+                <div class="gallery box chosen">
+                    <a onclick="changeSelection(1)"><img src="img/interests/gallery/sports.png" style="width:30%"></a>
+                    <a onclick="changeSelection(1)" class="gallery_txt selector1">Sports & Keeping Fit</a>
+                    <a onclick="changeSelection(2)"><img src="img/interests/gallery/hobbies.png" style="width:30%"></a>
+                    <a onclick="changeSelection(2)" class="gallery_txt selector2">Hobbies</a>
+                    <a onclick="changeSelection(3)"><img src="img/interests/gallery/tv.png" style="width:30%"></a>
+                    <a onclick="changeSelection(3)" class="gallery_txt selector3">TV & Film</a>
+                    <a onclick="changeSelection(4)"><img src="img/interests/gallery/globe.png" style="width:30%"></a>
+                    <a onclick="changeSelection(4)" class="gallery_txt selector4">World Travel</a>
+                    <a onclick="changeSelection(5)"><img src="img/interests/gallery/video_game.png" style="width:30%"></a>
+                    <a onclick="changeSelection(5)" class="gallery_txt selector5">Video Games</a>
+                    <a onclick="changeSelection(6)"><img src="img/interests/gallery/future.png" style="width:30%"></a>
+                    <a onclick="changeSelection(6)" class="gallery_txt selector6">Future Plans</a>
+                </div>
+    
+                <div class="selected box">
+                    <div class="contents active">
+                        <h4>Check what interests we have in common!</h4>
+                        <p class="variable_intro">Follow the steps below:</p>
+                        <ol class="variable_list">
+                            <li>Select a catagory from the box on the left.</li>
+                            <li>Read informatin about the topic.</li>
+                            <li>If we have this interest in common, check the box!</li>
+                            <li>Each box has a certain number of "points" allocated to it.</li>
+                            <li>Repeat for each catagory.</li>
+                            <li>Click the button at the bottom of the page to see what % of total points you scored for matching our interests.</li>
+                        </ol>
+                    </div>
+                
+    
+                    <div class="contents1 fade">
+                        <h4>Sports & Keeping Fit</h4>
+                        <p class="variable_intro">I love to keep active and spend as much time outdoors as I can.</p>
+                        <ul class="variable_list">
+                            <label class='tick_box_outline'><span class="list_first_word">Swimming</span> is my favourite way to keep fit. It clears my head after a long day and is a good cardio workout!</li>
+                                <input type="checkbox" class="my_check" value = 1>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Hiking</span> is something I do when I need to get away from people! I can be fun to go alone, or with friends, take in some beautiful scenery and get some excercise.</li>
+                                <input type="checkbox" class="my_check" value = 1>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Badminton</span> is a sport I have not played properly in years. In my school and University days, I played casually with friends but have not done so much since. This is a sport I would love to get back in to.</li>
+                                <input type="checkbox" class="my_check" value = 1>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Yoga</span> is a new activity I started after moving to London. It is a low impact workout and helps imporve my (much needed) flexibility.</li>
+                                <input type="checkbox" class="my_check" value = 1>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Squash</span> is a another new sport I started recently, playing with a friend. I am an absolute beginner and have won one out of seven matches so far...</li>
+                                <input type="checkbox" class="my_check" value = 1>
+                                <span class="checkmark"></span>
+                            </label>
+                        </ul>
+                    </div>
+    
+                    <div class="contents2 fade">
+                        <h4>Hobbies</h4>
+                        <p class="variable_intro">Here are a few things I enjoy doing which I wouldn't catagorise as a sport or don't involve me staring at a screen!</p>
+                        <ul class="variable_list">
+                            <label class='tick_box_outline'><span class="list_first_word">Baking</span> cakes, cookies, bread or anything that's reasonably simple is my favourite way to de-stress and fight hunger at the same time. While not the most healthy activity to do regularly, no one seems to complain!</li>
+                                <input type="checkbox" class="my_check" value=1>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Reading</span> a fantasy book is a fun way to detach from reality and loose yourself in another world. I find it a nice thing to do before falling asleep to help switch the brain off.</li>
+                                <input type="checkbox" class="my_check" value=1 >
+                                <span class="checkmark"></span>
+                            </label>
+                        </ul>
+                    </div>
+    
+                    <div class="contents3 fade">
+                        <h4>TV & Film</h4>
+                        <p class="variable_intro">I can talk for <b><em>hours</em></b> about the following TV shows and movies. If you're ever stuck for something to say to me, just mention any of the following:</p>
+                        <ul class="variable_list">
+                            <label class='tick_box_outline'><span class="list_first_word">Game of Thrones</span>
+                                <input type="checkbox" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Rupaul's Drag Race</span>
+                                <input type="checkbox" class="my_check" value=7>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Avatar: The Last Airbender / Legend of Korra</span>
+                                <input type="checkbox" class="my_check" value=7>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Friends</span>
+                                <input type="checkbox" class="my_check" value=3>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Peep Show</span>
+                                <input type="checkbox" class="my_check" value =5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Buffy the Vampire Slayer</span>
+                                <input type="checkbox" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Kill Bill</span>
+                                <input type="checkbox" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">The Lord of the Rings</span>
+                                <input type="checkbox" class="my_check" value=3>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Any of the Marvel's Avengers films</span>
+                                <input type="checkbox" class="my_check" value=3>
+                                <span class="checkmark"></span>
+                            </label>
+                        </ul>
+                    </div>
+    
+                    <div class="contents4 fade">
+                        <h4>World Travel</h4>
+                        <p class="variable_intro">In recent years I realised I have not seen enough of the world! There are many places I would love to visit and assuming time and personal finances allow it, I will try to get to see them in the coming years.</p>
+                        <ul class="variable_list">
+                            <label class='tick_box_outline'><span class="list_first_word">Japan</span>: I have always loved Japanese culture and given my geology backgroud, Japan would amazing to visit (who doesn't love volcanic islands!)
+                                <input type="checkbox" class="my_check" value=0.5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Australia</span>: Friends of mine have recently moved to Australia and I am a little jealous.
+                                <input type="checkbox" class="my_check" value=0.5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">New Zealand</span>: Lord of the Rings was filmed here and I have been obsessed with it ever since. It looks beautiful.
+                                <input type="checkbox" class="my_check" value=0.5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">New York</span>: Probably the closest place on this list but I have never been. There are so many touristy things I want to do in New York.
+                                <input type="checkbox" class="my_check" value=0.5>
+                                <span class="checkmark"></span>
+                            </label>
+                        </ul>
+                    </div>
+    
+                    <div class="contents5 fade">
+                        <h4>Video Games</h4>
+                        <p class="variable_intro">I can talk for <b><em>hours</em></b> about the following video games. I've probably spent more hours than I'll admit on these:</p>
+                        <ul class="variable_list">
+                            <label class='tick_box_outline'><span class="list_first_word">Final Fantasy 7</span>
+                                <input type="checkbox" class="my_check" class="my_check" value=7>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Zelda: Ocarina of Time</span>
+                                <input type="checkbox" class="my_check" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Zelda: Skyward Sword</span>
+                                <input type="checkbox" class="my_check" class="my_check" value=3>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">The Last of Us</span>
+                                <input type="checkbox" class="my_check" class="my_check" value=3>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Metal Gear Solid 3: Snake Eater</span>
+                                <input type="checkbox" class="my_check" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Dark Souls 2</span>
+                                <input type="checkbox" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Overwatch</span>
+                                <input type="checkbox" class="my_check" value=7>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Most Pokemon games</span>
+                                <input type="checkbox" class="my_check" value=8>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class='tick_box_outline'><span class="list_first_word">Super Metroid</span>
+                                <input type="checkbox" class="my_check" value=5>
+                                <span class="checkmark"></span>
+                            </label>
+                        </ul>
+                    </div>
+    
+                    <div class="contents6 fade">
+                        <h4>Plans for the future</h4>
+                        <p class="variable_intro">This is a list of things I intend to do over the coming months/years:</p>
+                        <ul class="variable_list">
+                            <li><span class="list_first_word">Become a software developer</span>: This will be an exciting career change and I look forward to taking part in the _nology & Deutsche Bank Tech Accelerator Programme. I'm looking forward to learning new programmig languages and getting creative in the world of technology.</li>
+                            <li><span class="list_first_word">Travel</span>: A list of places I would love to visit can be seen in the World Travel section. There are plenty more places I would like to go but I want to make an effort to enjoy my free time and explore the world a little more.</li>
+                            <li><span class="list_first_word">Explore London</span>: I recently moved to London and so far, I love it! I want to explore the city more and make it my home! There always seems to be fun things going on!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="calculator_container">
+                <a class=calculator_button onclick="calculatePoints()">CALCULATE!</a>
+            </div>
+            <br>
+            <br>
+            <div class="txt_box">
+                <p class="main_about_txt calculated_txt">Select items in the box above to see how much we have in common!</a>
+            </div>
+            <br>
+    </article>
+    <script src="interests.js"></script>
+</main>
+    <footer>
+        <h4>Footer</h4>
+        <p>This website has been made as part of the _nology pre-course work for the Deutsche Bank Tech Accelerator Programme.</p>
+    </footer>
+</body>
+</html>

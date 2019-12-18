@@ -1,0 +1,166 @@
+.heading-cont {
+/*	background: url(https://source.unsplash.com/8NHL3OI5eWc) no-repeat center center fixed;*/
+	background: url(pinksmoke.jpg) no-repeat center center fixed;
+	background-size: cover;
+	
+}
+
+img.pinksmoke {
+	height: 100%;
+	width: auto;
+
+}
+.pink div {
+	background: #ffbee6;	
+}
+.blue div {
+	background: #bfdcf4;
+	height: 940px;	
+}
+.purple div {
+	background: #b78bd9;
+	height: 618px;	
+}
+.green div {
+	background: #96da96;
+	height: 618px;	
+}
+.yellow div {
+	background: #f2eacc;
+	height: 618px;	
+}
+.orange div {
+	background: #f2b199;
+	height: 618px;
+}
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	font-family: "Nunito", sans-serif;
+}
+.blurb h2 {
+	color: #ea1c2c;
+	font-weight: 100;
+	font-size: 2.5rem;
+}
+
+
+#mainNav {
+	font-size: 1.8rem;
+	font-weight: 100;
+	padding-left: 3rem;
+/*	background-color: rgba(245,245,245,0.3);*/
+
+}
+#mainNav .nav-link {
+	color: #e0e0e0;
+	padding-right: 2rem;
+}
+#mainNav .nav-link:hover {
+	color: #ea1c2c;
+}
+#header {
+	text-align: center;
+	padding-top: 20%;
+
+}
+
+span {
+	color: #ea1c2c;
+}
+#header h1 {
+	font-weight: 800;
+	font-size: 4.5rem;
+	color: white;
+	padding-bottom: 20%;
+
+}
+#header h2 {
+	font-weight: 400;
+	font-size: 2.5rem;
+	color: white;
+
+}
+#about {
+	padding: 6% 10% 13.1% 10%;
+	align-content: left;
+	max-height: 100%;
+	color: #744767;
+}
+#about h1{
+	font-weight: 400;
+	/*color: #744767;*/
+	font-size: 2.2rem;
+/*	padding-left: 5%;
+	padding-top: 5%;*/
+}
+#about p {
+	font-weight: 280;
+	font-size: 30px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#about button {
+	color: #ffbee6 ;
+	background: #744767;
+	border-radius: 25px;
+
+}
+#about button:hover {
+	color: #ea1c2c;
+	background: rgba(116, 71, 103,0.5);
+	transition: 0.3s;
+}
+#about button .fas .fa-chevron-right:hover {
+	color: #ea1c2c;
+	transform: translate(10px,0px);
+}
+
+#connect {
+	padding: 10% 10% 10% 10%;
+	color: #798fa2;
+	font-size: 30px;
+	font-weight: 280; 
+}
+#connect a {
+	color: #798fa2;
+	text-underline-position: none;
+}
+#connect i {
+	padding-right: 3%;
+}
+#connect h1 {
+	font-weight: 400;
+	font-size: 2.2rem;
+	padding-bottom: 8%;
+}
+#connect p {
+	padding-bottom: 8%;
+}
+.container-fluid #connect img {
+	height: 630px;
+}
+.content {
+	color: #333333;
+	font-size: 28px;
+	font-weight: 280;
+	text-align: center;
+	align-content: center;
+}
+.content h1 {
+	font-weight: 400; 
+	font-size: 2.2rem;
+	padding:2% 6% 2% 6%;
+}
+.content p {
+	padding:2% 6% 2% 6%;
+}
+.content img {
+	height: 618px;
+}  
+
+.navbar.scrolled {
+    background: rgba(224,224,224,0.5);
+    transition: background 500ms;
+}

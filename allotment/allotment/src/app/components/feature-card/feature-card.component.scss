@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+h3 {
+    @include accordion-card-header;
+  } 
+
+section.grid-card { 
+    @include accordion-card;
+
+    h3.feature-name {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3.scenario-status {
+        @include accordion-card-statuses;
+    }
+
+    div.card-content-holder {
+        @include accordion-card-description;
+    }
+}

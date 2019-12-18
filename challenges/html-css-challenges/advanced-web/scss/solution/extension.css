@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100vw;
+  max-height: 10vh;
+}
+header h1 {
+  height: 100%;
+  max-width: 100%;
+  padding: 10px;
+  background-color: #06a7ed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .translucent {
+  opacity: 0.5;
+}
+main .translucent:hover {
+  opacity: 1;
+}
+main .side-panel,
+main #mdl-panel {
+  border: 2px black solid;
+  border-radius: 25px;
+  height: 70%;
+  min-width: 30%;
+  margin: 0 20px;
+  background-color: #06a7ed;
+}
+main .side-panel .hidden,
+main #mdl-panel .hidden {
+  display: none;
+}
+main .side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .side-panel div {
+  height: 25%;
+  width: 80%;
+  border: 2px black solid;
+  border-radius: 25px;
+  background-color: #f652a0;
+  margin: auto;
+}
+main #mdl-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #mdl-panel div {
+  height: 40%;
+  width: 80%;
+  border: 2px black solid;
+  margin: auto;
+  background-color: #f8ea8c;
+  border-radius: 25px;
+}
+main .side-panel:hover .hidden,
+main #mdl-panel:hover .hidden {
+  display: block;
+}
+
+/*# sourceMappingURL=scss-extension.css.map */

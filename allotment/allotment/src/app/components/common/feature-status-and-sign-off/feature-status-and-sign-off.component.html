@@ -1,0 +1,16 @@
+<h3 [ngStyle]="{'font-size.px': featureTitleFontSize }" class="scenario-status" [ngClass]="{
+        readyForDev: testStatus === 'In development',
+        complete: testStatus === 'Complete',
+        pending: testStatus === 'Pending sign off'
+      }">
+    {{ testStatus }}
+    <fa-icon *ngIf="testStatus === 'Pending sign off' && isViewingSnapshot === false" (click)="handleStatusClick($event)" [icon]="faFileSignature">
+    </fa-icon>
+    <div class="sign-off-popup" *ngIf="showSignOffPopUp">
+        <h4>Confirm Sign Off</h4>
+        <p>Please sign off this feature, with {{ feature.scenarios.length }} scenarios.</p>
+        <button (click)="handleSignOff($event)" type="submit" class="fortesting">Sign Off
+            <fa-icon [icon]="faSignature"></fa-icon>
+        </button>
+    </div>
+</h3>

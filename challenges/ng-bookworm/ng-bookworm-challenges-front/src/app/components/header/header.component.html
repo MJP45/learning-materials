@@ -1,0 +1,23 @@
+<header>
+  <div routerLink="/dashboard" class="logo">
+    <img src="../../../assets/images/logo-white.png" alt="logo-white" />
+
+    <h1>{{ searchText }}</h1>
+  </div>
+
+  <div class="author-search">
+    <div class="search">
+      <app-search-bar
+        placeholder="Type an author to search"
+        (handleSearch)="updateSearchText($event)"
+      ></app-search-bar>
+    </div>
+    <div
+      class="qa-click fa-wrap"
+      [class.active]="isActive"
+      (click)="handleFavClick()"
+    >
+      <fa-icon [icon]="faHeart" class="qa-icon"></fa-icon>
+    </div>
+  </div>
+</header>

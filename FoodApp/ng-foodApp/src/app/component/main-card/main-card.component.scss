@@ -1,0 +1,14 @@
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  height: 700px;
+  width: 300px;
+
+  img {
+  height: 70%;
+  width: 95%;
+  }
+};

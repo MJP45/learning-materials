@@ -1,0 +1,48 @@
+
+@import "./src/mixins.scss";
+
+section {
+  width: 100%;
+  padding-right: $base-spacing * 3;
+  @include flex-row(space-between);
+
+  .rhs-options {
+    width: 100%;
+    @include flex-row(space-between);
+    align-items: center;
+
+    button {
+      @include primary-button;
+      justify-self: flex-end;
+      align-self: flex-end;
+    }
+
+    .drop-down {
+      z-index: 5;
+      position: relative;
+
+      .snapshot-select{
+        margin-top: $base-spacing / 5;
+        border: 0.5px solid $dark-gray;
+        padding: $base-spacing / 2;
+        width: 220px;
+        height: 20px;
+        position: relative;
+
+        fa-icon {
+          position: absolute;
+          right: 10px;
+          top: 7px;
+          cursor: pointer;
+          }
+      }
+
+      span {
+        width: 100%;
+        position: absolute;
+        top: 47px;
+        right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<section>
+  <input type="text" [(ngModel)]="search" />
+  <button (click)="searchMovie()">search</button>
+</section>
+<section class="movie" *ngIf="movie">
+  <app-movie-card [movie]="movie"></app-movie-card>
+</section>

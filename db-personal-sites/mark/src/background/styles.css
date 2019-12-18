@@ -1,0 +1,77 @@
+.rhs section{
+    margin-left : 2%;
+    width       : 100%;
+
+}
+
+.pageTitle{
+    display: inline-block;
+}
+
+
+h2{
+    font-size       : 18px;
+    font-weight     : 600;
+    margin-bottom   : 2px;
+}
+
+ 
+
+.section_1 li, .section_2 li, .section_3 li{
+    margin-left :3%;
+    font-size   :0.9em;
+}
+
+.section_1{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.sectionWrapper{
+    display : inline-block;
+    width   : 70%;
+    vertical-align: top;
+}
+.section_1 ul{
+    width   : 98%;
+    margin  : 1px;
+}
+
+.section_1 img{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.section_1 p, .section_3 p {
+    display: inline-block;
+    white-space: normal;
+    margin-right: 1%;
+    text-align: top;
+    vertical-align: top;
+    width: 98%;
+}
+
+.section_2 p{
+    display: inline-block;
+    white-space: normal;
+    margin-left:10%;
+    width:100%;
+    
+}
+.section_2 ul{
+    margin-left:15%;
+}
+
+
+.section_3 div{
+  width : 64%;
+}
+
+
+.bottomGraphicWrapper{
+    margin-top:1%;
+    text-align:center;
+    padding-left:2%;
+    
+  
+  }

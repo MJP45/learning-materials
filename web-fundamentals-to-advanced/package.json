@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "sass": "^1.20.3"
+  },
+  "scripts":{
+    "build-css": "sass main.scss main.css",
+    "sass-watch": "sass --watch .:."
+  }
+}

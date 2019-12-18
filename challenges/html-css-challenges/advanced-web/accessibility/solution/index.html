@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="main.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 id="logo" tabindex="1">_nology</h1>
+
+        <div id="icons">
+          <a href="#" aria-label="User profile" tabindex="2">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Settings" tabindex="3">
+            <i class="fa fa-cog" aria-hidden="true"></i>
+          </a>
+          <a href="#" aria-label="Messenger" tabindex="4">
+            <i class="fa fa-telegram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form action="#" aria-label="Input details" tabindex="5">
+        <fieldset>
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Name" tabindex="6" />
+          <label for="password"></label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            tabindex="7"
+          />
+          <label for="submit"></label>
+          <input id="submit" type="submit" tabindex="8" />
+        </fieldset>
+      </form>
+      <img
+        src="../assets/background.jpg"
+        tabindex="9"
+        alt="Nology background image"
+        height="300px"
+        width="500px"
+      />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@import "../../../variables.scss";
+
+section.diffViewerWrapper {
+    width: calc(100% - $base-spacing*3);
+    height: 100%;
+    margin: $base-spacing*3;
+    opacity: 1;
+
+    h2 {
+        font-size: $base-font-size*1.5;
+        text-align: center;
+        margin: $base-spacing*2 0;
+        font-weight: 700;
+    }
+
+    .diffWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: $base-spacing*2;
+        width: 98%;
+
+        .featureContainer {
+            opacity: 1;
+            width:  46%;
+            height: 100%;
+            border: 1px solid black;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: $base-spacing;
+            padding-right: $base-spacing*2.5;
+
+            h3 {
+                font-size: $base-font-size*1.3;
+                margin: $base-spacing 0;
+                font-weight: 700;
+            }
+
+            p {
+                margin-bottom: $base-spacing;
+            }
+        }
+    }
+}

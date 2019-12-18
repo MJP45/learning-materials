@@ -1,0 +1,17 @@
+<div class="feature-show-page">
+  <header>
+    <app-summary-title [primaryTitle]="project.name" [title]="feature.name"></app-summary-title>
+    <app-breadcrumb></app-breadcrumb>
+  </header>
+  <section class="summary">
+    <div class="notes">
+      <app-summary-details [feature]="feature" [isViewingSnapshot]="isViewingSnapshot"></app-summary-details>
+    </div>
+    <div class="testing-status">
+      <app-test-results [feature]="feature"></app-test-results>
+    </div>
+  </section>
+  <!-- <app-title [feature]="feature"></app-title> -->
+  <app-feature-scenarios [feature]="feature"></app-feature-scenarios>
+
+</div>

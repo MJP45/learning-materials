@@ -1,0 +1,15 @@
+<div>
+  <input
+    type="range"
+    #slider
+    (input)="handleValueChange(slider.value)"
+    [min]="min"
+    [max]="max"
+    [value]="value"
+  />
+  <div class="values">
+    <p>{{ min }}</p>
+    <p class="count">{{ value }}</p>
+    <p>{{ max }}</p>
+  </div>
+</div>

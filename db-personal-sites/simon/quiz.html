@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simon Freedland - Quiz</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav class="main-nav">
+            <h1>Simon <br class="space">Freedland</h1>
+            <ul class="main-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mailto:simon@myself.com">Contact</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <div class="main-container">
+        <main>
+            <img src="img/quiz.png" alt="quiz picture">
+
+            <form onsubmit="return processInput();">
+                <h2>Question 1</h2>
+
+                <label for="question1">Is Simon married? [1 point]</label>
+                <br><br>
+                <label for="married-yes">Yes</label>
+                <input type="radio" name="question1[]" value="1" id="married-yes">
+                <label for="married-no">No</label>
+                <input type="radio" name="question1[]" value="2" id="married-no">
+                <p id="answer1"><br></p>
+
+
+
+                <h2>Question 2</h2>
+                <label for="question2">How many children does Simon have? [1 point]</label>
+                <br><br>
+                <input type="number" name="question2" id="question2">
+                <p id="answer2"><br></p>
+
+                <h2>Question 3</h2>
+                <label for="question3">How banks has Simon worked for? [2 points]</label>
+                <br><br>
+                <input type="number" name="question3" id="question3">
+                <p id="answer3"><br></p>
+
+                <h2>Question 4</h2>
+                <label for="question4">How many whole years has Simon worked for DB (round down)? [2 points]</label>
+                <br><br>
+                <input type="number" name="question4" id="question4">
+                <p id="answer4"><br></p>
+
+                <h2>Question 5</h2>
+                <label for="question5">How many miles has Simon cycled in 2019? [2 points]</label>
+                <br><br>
+                <select name="question5" id="question5">
+                    <option label=" "></option>
+                    <option value="0">0 - 500</option>
+                    <option value="501">501 - 1000</option>
+                    <option value="1001">1001 - 2000</option>
+                    <option value="2001">2001 - 4000</option>
+                    <option value="4000">4000+</option>
+                </select>
+                <p id="answer5"><br></p>
+
+                <h2>Question 6</h2>
+                <label for="question6">Which vehicle classes does Simon have on his driving licence? [3
+                    points]</label>
+                <br><br>
+                <label for="motorcycle">Motorcycle</label>
+                <input type="checkbox" id="motorcycle" name="question6[]" value="1">
+                <label for="car">Car</label>
+                <input type="checkbox" id="car" name="question6[]" value="2">
+                <label for="lorry">Rigid Lorry</label>
+                <input type="checkbox" id="rigidlorry" name="question6[]" value="4">
+                <label for="lorry">Articulated Lorry</label>
+                <input type="checkbox" id="articulatedlorry" name="question6[]" value="8">
+                <p id="answer6"><br></p>
+
+                <h2>Question 7</h2>
+                <label for="question7">Which technologies has Simon used in the past? [4 points]</label>
+                <br><br>
+                <label for="java">Java</label>
+                <input type="checkbox" id="java" name="question7[]" value="1">
+                <label for="csharp">C#</label>
+                <input type="checkbox" id="csharp" name="question7[]" value="2">
+                <label for="vb">Visual Basic</label>
+                <input type="checkbox" id="vb" name="question7[]" value="4">
+                <label for="sql">SQL</label>
+                <input type="checkbox" id="sql" name="question7[]" value="8">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="question7[]" value="16">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="question7[]" value="32">
+                <label for="js">JavaScript</label>
+                <input type="checkbox" id="js" name="question7[]" value="64">
+                <p id="answer7"><br></p>
+
+                <p id="commentary"></p>
+                <p id="grade-picture"></p>
+
+                <input type="submit" value="Submit answers" id="submit">
+
+            </form>
+
+            <footer>
+                <p class="copyright">&copy; 2019 Simon Freedland</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>

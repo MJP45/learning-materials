@@ -1,0 +1,26 @@
+<table>
+  <tr>
+    <th>Project Name</th>
+    <th class="low-priority-col">Project ID</th>
+    <th>Feature Count</th>
+    <th class="low-priority-col">Scenario Count</th>
+    <th>Tests Passing (%)</th>
+    <th class="low-priority-col">Status</th>
+  </tr>
+  <tr *ngFor="let project of projects" [routerLink]="['/projects', project.id]">
+    <td>{{ project.name }}</td>
+    <td class="low-priority-col">{{ project.id }}</td>
+    <td>{{ project.features.length }}</td>
+    <td class="low-priority-col">{{ getNumScenarios(project) }}</td>
+    <td>
+        <span
+        [class.green]="getPctTestPassed(project) >= greenThreshold"
+        [class.amber]="getPctTestPassed(project) >= amberThreshold &&
+        getPctTestPassed(project) < greenThreshold"
+        [class.red]="getPctTestPassed(project) < amberThreshold"
+        >&#x25CF;</span>
+        {{ getPctTestPassed(project) }}%
+    </td>
+    <td class="low-priority-col">{{ project.status }}</td>
+  </tr>
+</table>

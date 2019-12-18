@@ -1,0 +1,12 @@
+<nav>
+  <h1 routerLink="/">FilmWorm</h1>
+  <div (click)="toggleMenu()" class="links">
+    <fa-icon [icon]="faBars"></fa-icon>
+    <ul *ngIf="isOpen">
+      <li routerLink="/movies">Movies</li>
+      <li routerLink="/favourites">Favourites</li>
+      <li routerLink="/contact">Contact</li>
+      <li routerLink="/search">New films</li>
+    </ul>
+  </div>
+</nav>

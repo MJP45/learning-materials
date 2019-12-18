@@ -1,0 +1,73 @@
+@import "../../../variables.scss";
+@import "../../../styles.scss";
+@import "../../../mixins.scss";
+
+.container {
+    height: 84.5vh;
+    @include flex-row(center);
+    font-family: $font-family;
+
+    form {
+        @include flex-column(center);
+        @include form; 
+        padding: $base-spacing*2 $base-spacing*4;
+        width: 400px;
+        height: 70%;
+        margin-top: $base-spacing*2;
+
+        h2,  fa-icon {
+            font-size: 2em;
+            align-self: center; 
+        }
+
+        label, fa-icon, a {
+            margin-top: $base-spacing;
+        }
+
+        input {
+            padding: $base-spacing*0.5;
+            margin: $base-spacing $base-spacing*8 0 $base-spacing*8;
+            @include input-field; 
+        }
+
+        p { 
+            text-align: left;
+            margin: $base-spacing $base-spacing*8;
+            margin-bottom: 0;
+            font-style: italic;
+
+            &.link {
+                text-decoration: none;
+                color: white;
+                align-self: center;
+                cursor: pointer;
+                font-style: normal;
+    
+                &:hover {
+                    color: $primary-color;
+                }
+    
+                fa-icon {
+                    margin-left: $base-spacing*0.5;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        
+
+        input[type="submit"] {
+            @include login-button; 
+            display:inline-block;
+            font-size:15px;
+            padding:9px 23px;
+            margin-top: $base-spacing*2;
+    
+            &:active {
+                position:relative;
+                top:1px;
+            }
+        }
+            
+    }
+}

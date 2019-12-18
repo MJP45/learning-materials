@@ -1,0 +1,160 @@
+/* 
+
+Styles for specific to the interests page */
+
+
+h2{
+    font-size       : 18px;
+    font-weight     : 600;
+    margin-bottom   : 2px;
+    margin-left     : 2%;
+}
+
+
+ 
+.sectionWrapper ul{
+    list-style-type : none;
+    margin-left     : -2%;
+    margin-top      : 5%;
+    text-align      : center; 
+}
+
+.sectionWrapper ul li{
+    display         : inline-block;
+    margin-right    : 2%;
+  
+}
+.sectionWrapper{
+    display     : inline-block;
+    width       : 98%;
+    margin-left : 5%;
+}
+
+.sectionWrapper p {
+    display         : inline-block;
+    white-space     : normal;
+    margin-left     : 5%;
+    margin-right    : 2%;
+    text-align      : top;
+    text-align      : justify;
+    padding-right   : 10px;
+    width           : 85%;
+    
+}
+
+/* This is a fudge to support the layout on the background page where due to formatting issues there is no ul prefixing
+the list but there is a p so I can target just the li's on the background page not perfect.. */
+
+.sectionWrapper p li{
+    margin-top  : 1%;
+    margin-bottom : 1%;
+    margin-left: 5%;
+}
+
+.navigation{
+    margin-top:5%;
+    width:95%;
+}
+
+.navButton{
+   
+    line-height         : 20px;
+    padding             : 2px 10px;
+    border              : 1px solid  rgb(148, 165, 182);
+    background-color    : #2D5273;
+    font-size           : 1em; 
+    color               : rgb(198, 210, 219);
+    display             : inline-block;
+    width               : 20px;
+    text-decoration     : none;
+    text-align          : center; 
+    border-radius       : 1em;
+    height              : 20px;
+}
+
+.navButtonDisabled{
+    background-color: grey;
+    border          : 2px solid gray;
+    border-style: groove;
+}
+
+.navButtonDisabled:hover{
+    background-color    : grey;
+    color               : rgb(198, 210, 219);
+}
+
+nav span{
+    margin-left:40%;
+    
+    
+}
+
+.navButtonPrevious{
+    margin-left:0px;
+    margin-right: auto;
+}
+
+.navButtonNext{
+    margin-left:90%;
+   
+}
+
+img{
+    max-width       : 100%;
+    height          : auto;
+    width           : auto;
+  
+    border          : 2px solid  #2D5273;
+
+}
+
+
+/* needed to format differently from the homepage */
+
+.bottomGraphicWrapper{
+    margin-top      : 1%;
+    text-align      : center;
+    padding-left    : 2%;
+    
+  
+  }
+
+
+ /*==============================================================================
+    Responsive Styles
+  ==============================================================================
+*/
+
+  @media screen and (max-width: 1870px){
+
+  .section_2 li{
+    margin-left : 3%;
+    font-size   : 0.9em;
+    display     : block;
+}
+  }
+
+  @media screen and (max-width: 1300px){
+
+    .section_Wrapper div{
+      
+      display   : block;
+  }
+
+  
+.section_1 div {
+    width   : 95%;
+}
+
+.section_1 p {
+    display         : block;
+  
+    margin-right    : 0;
+    }
+
+
+    .section_2 p {
+        width   : 90%;
+    } 
+}
+

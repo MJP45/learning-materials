@@ -1,0 +1,35 @@
+@import "../../../../variables";
+@import "../../../../mixins";
+
+
+* {
+	box-sizing: border-box;
+}
+
+h3 {
+  @include accordion-card-header;
+} 
+
+.acc-piece {
+  @include accordion-card;
+
+  .scenario-name {
+    font-weight: bold;
+  }
+
+  .scenario-status {
+    @include accordion-card-statuses;
+
+    &.pending {
+      background-color: yellow;
+    }
+
+    &.untested {
+      background-color: $dark-gray;
+    }
+  }
+
+  .card-description {
+    @include accordion-card-description;
+  }
+}

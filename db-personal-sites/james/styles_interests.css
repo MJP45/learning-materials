@@ -1,0 +1,294 @@
+html {
+    background-color:#2e2e2e;
+  }
+  body, ul, li, h1, h2, h3, h4, a{
+      font-family: Arial;
+  }
+  div.side_bar {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+      overflow-x: hidden;
+      padding-top: 20px;
+      align-content: center;
+  }
+  div.portrait {
+      text-align: center;
+  }
+  div.portrait img {
+      width: 80%;
+      position: sticky;
+  }
+  nav {
+      text-align: left;
+      position: sticky;
+  }
+  ul.nav {
+      margin: 10px 20px;
+      border-radius: 12px;
+      list-style-type: none;
+      line-height: 100px;
+  }
+  li.nav_list a{
+      /* background-color: grey; */
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 25px;
+      text-decoration: none;
+      color: #f5f0f0;
+  }
+  li.nav_list a:hover, a.calculator_button:hover {
+      background-color: slategray;
+  }
+  main, footer{
+    margin-left: 22%; /* Force to be just after the side nav */
+}
+h2 {
+    text-align: center;
+    color:#f5f0f0;
+}
+h4 {
+    margin: 5px;
+}
+article span.first_word{
+    color:#000000;
+    font-weight: bold;
+}
+p.first_p {
+    text-align: center;
+}
+div.txt_box {
+    background-color: #dad6d6;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    margin-right: 25px;
+}
+div.box_container{
+    width: 90%;
+    border: solid #000000;
+    margin: 0 auto;
+    display: flex;
+}
+
+div.box{
+    border: solid;
+    flex: 1;
+    width: 40%;
+    background-color: #dad6d6;
+    margin: 20px;   
+    align-content: center;
+    display:inline-block;
+}
+
+div.gallery img{
+    border: solid #000000 ;  
+}
+
+div .gallery a{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin: 5px;
+}
+
+div.gallery a.gallery_txt{
+    text-decoration:none;
+    color: #f5f0f0;
+    text-align: center;
+    background-color:#000000;
+    border-radius: 5px;
+    vertical-align: 1.5em;
+    padding: 7px;
+}
+div.gallery a.chosen{
+    background-color: #f5f0f0;
+    color: #000000;
+    border: solid 1px;
+}
+p.variable_intro{
+    position: relative;
+    top: 0px;
+    padding:5x;
+    margin: 5px;
+}
+
+ul.variable_list{
+    list-style-position: inside;
+}
+
+ol li{
+    margin: 20px 5px;;
+}
+span.list_first_word{
+    color: #000000;
+    font-weight: bold;  
+}
+
+/* The container */
+.tick_box_outline {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .tick_box_outline input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .tick_box_outline:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .conttick_box_outlineainer input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .tick_box_outline input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .tick_box_outline .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color:  #000000;
+  }
+
+  /* Hide unless activated by user */
+  div.contents1, div.contents1, div.contents2, div.contents3, div.contents4, div.contents5, div.contents6 {
+    display: none;
+}
+
+div.calculator_container {
+    align-content: center;
+    text-align: center;
+}
+a.calculator_button {
+    background-color: #000000;
+    color: #f5f0f0;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.calculated_txt{
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    background-color: #000000;
+    font-size: 12px;
+    text-align: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #f5f0f0;
+}
+
+/* slide transition animation */
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 0.9}
+  }
+  
+  @keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 0.9}
+  }
+  /*  ----------------------- Screen adjustments --------------------- */
+@media screen and (max-width: 400px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 650px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 800px){ /*To split across two rows*/
+    div.box{
+        display:block;
+        flex: none;;
+        width:80%;
+    }
+    div.box_container{
+    display: block;
+}
+
+}
+@media screen and (max-width: 1000px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 18px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}

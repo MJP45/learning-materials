@@ -1,0 +1,59 @@
+@import "src/variables.scss";
+@import "../../../styles.scss";
+
+* {
+  font-family: $font-family;
+}
+
+section {
+  margin: 25px;
+}
+
+
+table {
+  width: 100%;
+  text-align: left;
+
+  tr:hover {
+    background-color: $secondary-color;
+    color: white;
+    cursor: pointer;
+  }
+
+  tr:first-of-type {
+    background-color: $primary-color;
+    color: $light-gray;
+  }
+
+  span {
+    padding-right: $base-spacing/2;
+  }
+
+  span.green {
+    color: green;
+  }
+
+  span.amber {
+    color: orange;
+  }
+
+  span.red {
+    color: red;
+  }
+
+  th {
+    font-size: 1.2em;
+  }
+
+  td,
+  th {
+    padding: $base-spacing;
+    border: 1px solid gray;
+  }
+
+  .low-priority-col {
+    @include md {
+      display: none;
+    }
+  }
+}

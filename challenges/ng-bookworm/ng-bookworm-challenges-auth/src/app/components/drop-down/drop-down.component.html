@@ -1,0 +1,13 @@
+<div>
+  <button>
+    {{ label }}
+  </button>
+
+  <div class="fa-wrap">
+    <fa-icon [icon]="faSortDown"></fa-icon>
+  </div>
+
+  <ul *ngIf="isOpen">
+    <ng-content></ng-content>
+  </ul>
+</div>

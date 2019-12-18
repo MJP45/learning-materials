@@ -1,0 +1,5 @@
+<ul class="dropdown">
+  <li class="listitem" *ngFor="let item of listItems" (click)="handleClick(item.item)" [ngClass]="{selected: item.selected}">
+    {{ item.displayItem }}
+  </li>
+</ul>

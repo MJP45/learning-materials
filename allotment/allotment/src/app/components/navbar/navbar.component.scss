@@ -1,0 +1,55 @@
+@import "../../../variables.scss";
+@import "../../../mixins.scss";
+
+div {
+  background-color: $primary-color;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: $base-spacing $base-spacing*3;
+
+  .logo {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    padding: $base-spacing;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .nav-icons {
+    padding: 0px;
+
+    fa-icon {
+      color: white;
+      font-size: 30px;
+      margin: $base-spacing * 1.5 $base-spacing $base-spacing $base-spacing;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.button-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  fa-icon {
+    color: white;
+    font-size: 30px;
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+      opacity: 0.8;
+    }
+  }
+}

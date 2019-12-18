@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>SOFIA PAAVOLA</title>
+</head>
+<body>
+  <section class="meet"> 
+    <div class="meetme">
+    <h1>MEET <br> SOFIA.</h1>
+    <a href="about.html">click for more about me</a>  
+    </div>
+    <img src="img/website collage.png" alt="collage with various photos of sofia">
+  </section>
+  
+  <section class="slideshows">
+    <div class="photos">
+        <h2>MY WORLD THROUGH PHOTOS.</h2>
+        <div class="passions">
+        <h3>MY PASSIONS.</h3>
+        <p>There are several things which get my heartbeat going.
+            If it is even possible to fully condense them, skim 
+            through these photos. 
+        </p>
+    </div>
+
+        <!-- Slideshow container -->
+    <div class="slideshow-container1">
+        <div class="image-container1">
+            <div class="mySlides1">
+                <img src="img/venice.JPG" style="width:35%">
+            </div>
+            <div class="mySlides1">
+                <img src="img/madrid.JPG" style="width:35%">
+            </div>
+            <div class="mySlides1">
+                <img src="img/chueca.JPG" style="width:35%">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+    <div class="slideshow-container2">
+        <div class="image-container2">
+           <div class="mySlides2">
+                <img src="img/politics5.jpeg" style="width:35%">
+            </div>   
+            <div class="mySlides2">
+                <img src="img/politics7.jpeg" style="width:35%">
+            </div>
+            <div class="mySlides2">
+                <img src="img/food3.JPG" style="width:35%">
+            </div>
+            <div class="mySlides2">
+                    <img src="img/food8.png" style="width:35%">
+            </div>
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+        </div>
+</section>
+
+  <div class="wishlist">
+    <h2>WANDER AROUND MY <br> COURSE WISHLIST.</h2>
+  </div>
+
+  <div class="presents">
+    <div class="row">
+        <div class="column">
+            <img src="img/gift.jpg" alt="photo of gift box"style="width:20%" OnClick="Add_Text1();"> 
+            <p><span id="present_1"></span></p>
+        </div>
+        <div class="column">
+            <img src="img/gift.jpg" alt="photo of gift box"style="width:20%" OnClick="Add_Text2();"> 
+            <p><span id="present_2"></span></p>
+        </div>
+        <div class="column">
+            <img src="img/gift.jpg" alt="photo of gift box" style="width:20%" OnClick="Add_Text3();">
+            <p><span id="present_3"></span></p>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <p>created by sofia.</p>
+  </footer>
+  <script src="sandbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<article>
+  <h2 *ngIf="!this.book.volumeInfo.imageLinks" class="alt-title">
+    {{ book.volumeInfo.title }}
+  </h2>
+  <img [src]="cover" class="qa-cover" alt="placeholder" />
+  <img
+    class="qa-heart heart"
+    src="../../../assets/images/heart-open.png"
+    alt="Empty heart"
+  />
+</article>

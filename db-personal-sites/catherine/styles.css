@@ -1,0 +1,316 @@
+/* 
+CSS will display on a standard PC monitor . I struggled with Media queries but intend to carry on trying to get them work */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: black;
+    font-size: 20px;
+
+    }
+
+    h2{
+        color: white;
+        font-size: 30px;
+        font-family:'Hepta Slab', serif;
+    }
+
+    h3 {
+        font-family: 'Hepta Slab', serif;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .banner{
+        position: relative;
+        text-align: center;
+    }
+    .banner img{
+        max-width: 100%;
+        opacity: 0.9;
+        
+    }
+    .banner .my_name h1{
+        color: #0D0D0D;
+        font-family:  'Hepta Slab', serif;
+        position: absolute;
+        padding: 5px;
+        left: 42%;
+        top: 0.2% ;
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+    
+    .banner .my_name h2{
+        color: rgb(58, 58, 58);
+        font-family:  'Hepta Slab', serif;
+        position: absolute;
+        text-align: center;
+        padding: 5px;
+        left: 45%;
+        top: 20% ;
+        margin: 0;
+        font-size: 20px;
+        font-style: oblique;
+        letter-spacing: 1px;
+    }
+/* ============================================================================================================================================= */
+    nav{
+         background-color: black;
+
+        padding: 20px;
+        
+        position: sticky;
+        top: 5px;
+        z-index: 3;
+    
+    }
+    nav ul{
+        white-space: nowrap;
+        max-width: 1200px;
+        margin: 10px auto;
+      }
+    nav li{
+        width: 19%;
+        display: inline-block;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        color: whitesmoke;
+    
+    }
+    
+
+/* ============================================================================================================================================= */
+
+    .about_me_container{
+        text-align: center;
+        margin: 0px 20px;
+        border: 5px solid
+       
+        
+    }
+
+    .about_me p{
+        color: whitesmoke;
+        display: block;
+        border: solid 5px none;
+        width: 30%;
+        left: 35%;
+        position: relative;
+        font-size: 20px;
+
+    }
+    .about_me h2{
+
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .about_me img{
+        align-content: center;
+        border: 10px solid rgb(54, 61, 66);
+        margin: 10px;
+        height: 400px;
+
+    }
+
+/* ============================================================================================================================================= */
+ 
+
+  .background_container{
+    text-align: center;
+    margin: 20px 20px;
+    border: 5px solid ;
+    border-radius: 5px;
+    
+}
+
+.graduation_and_work{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.graduation_and_work li{
+    display: inline-block;
+    margin: 5px ;
+     border-radius: 5px;
+  }
+
+.graduation_and_work li img{
+  
+    height: 400px;
+    border: 10px solid rgb(54, 61, 66);
+    margin-top: 10px;
+}
+
+.uni_and_work p{
+    max-width: 80%;
+    margin-top: 10px;
+    color: white;
+    top: 2%;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* =========================================================================================================================================== */
+
+  
+
+
+
+    .nology_container{
+        text-align: center;
+        font-family:'Hepta Slab', serif;
+        font-size: 12px;
+        margin: 20px;
+        border-radius: 5px;
+        height: 100%;
+        color: white;
+        border: 5px solid none;
+    }
+
+    .goals_container{
+        position: center;
+        left: 38%;
+        
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(138, 118, 4);
+    border: 2px solid  rgb(138, 118, 4);
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 30%;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 35%;
+    margin-bottom: 30px;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Hepta Slab', serif;
+  }
+  
+ 
+  .active, .accordion:hover {
+    background-color:  rgb(197, 186, 123);
+  }
+  
+ 
+  .panel {
+    padding: 0 18px;
+    background-color: black;
+    display: none;
+    overflow: hidden;
+    width: 60%;
+    text-align: left;
+    margin-left: 20%;
+  
+  }
+  /* =========================================================================================================================================== */ 
+
+    .hobby_container{
+        text-align: center;
+        font-family:'Hepta Slab', serif;
+        font-size: 12px;
+        margin: 30px;
+        border-radius: 5px;
+        height: 100%;
+        overflow: auto;
+        color: white;
+
+    }
+    .hobby_container h2{
+        color: white;
+        font-size: 30px;
+        font-family:'Hepta Slab', serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    audio{
+        width:250px;
+        padding: 3px;
+    }
+
+    * {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: #0D0D0D;
+  background: #bbb;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.rect{
+    border: 5px solid red;
+}
+/* =========================================================================================================================================== */
+    footer{
+        background-color:rgb(138, 118, 4, 0.2);
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }

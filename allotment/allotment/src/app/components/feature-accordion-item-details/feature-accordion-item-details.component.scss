@@ -1,0 +1,46 @@
+@import "../../../variables.scss";
+
+.description-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $base-spacing * 2  $base-spacing * 3;
+  margin-bottom: 2px;
+  font-size: 1.2em;
+
+  // refuses to inherit width from parent. Quick fix to remove bug from master
+  width: calc(100% - 60px);
+
+  &:hover {
+    background-color: $secondary-color;
+    opacity: 0.6;
+    cursor: pointer;
+    color: white;
+  }
+
+  p {
+    height: 100%;
+
+    &:last-of-type {
+      width: 10%;
+      text-align: center;
+      padding: 3px;
+      border-radius: 2px;
+    }
+  }
+}
+
+.failed {
+  background-color:red;
+  color: white;
+}
+
+.passed {
+  background-color: $cta-color;
+  color: white;
+}
+.pending {
+  background-color: $pending-status;
+  color: white;
+}

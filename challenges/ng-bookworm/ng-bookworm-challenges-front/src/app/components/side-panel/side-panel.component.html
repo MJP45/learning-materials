@@ -1,0 +1,31 @@
+<section class="panel">
+  <h2 (click)="handleMenuClick()">
+    <fa-icon [icon]="faFilter"></fa-icon>
+    Filters
+  </h2>
+
+  <div class="qa-menu" [class.hide]="!menuOpen">
+    <section class="filter">
+      <h3>Key words</h3>
+      <input
+        #input
+        type="text"
+        (input)="updateSearch(input.value)"
+        placeholder="Search title or description"
+        [(ngModel)]="searchText"
+      />
+    </section>
+
+    <section class="filter">
+      <h3>Number of pages</h3>
+      <app-slider [min]="min" [max]="max" [value]="value"></app-slider>
+    </section>
+
+    <section class="dropdown filter">
+      <app-dropdown [label]="label">
+        <li *ngFor="let genre of genres">{{ genre }}</li>
+      </app-dropdown>
+    </section>
+    <button class="reset" (click)="resetFilters()">RESET ALL</button>
+  </div>
+</section>

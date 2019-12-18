@@ -1,0 +1,636 @@
+body,ul,li,h1,h2,h3,a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+.body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.meet img{
+    max-width: 70%;
+    position: relative; 
+    top: -5px; 
+    left: 50px;
+}
+
+/* -- still working on hovering img -- */
+/* .meet img:hover{
+    background-color:grey;
+    color: black;
+} */
+
+.meetme{
+   position: absolute; 
+   top: 650px;
+   left: 1100px;
+}
+
+a{
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 6px;
+    font-size: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 60px; 
+}
+
+section.slideshows { 
+    background-color:rgb(202, 180, 204);
+    position: relative; 
+    top: 10px;
+    max-height: 1100px;
+}
+
+.photos h2 {
+    text-align: center;
+    font-size: 26px;
+    padding:20px;
+}
+
+.photos h3{
+    position: absolute;
+    top: 450px;
+    left: 550px; 
+}
+
+.passions p{
+    border: solid 0.5px;
+    padding: 10px;
+    display: inline-block;
+    max-width: 250px;
+    position: absolute;
+    top: 450px;
+    left: 550px;
+}
+
+.image-container1{
+    text-align:left;
+    padding: 20px;
+}
+
+.image-container2{
+    text-align:right;
+    padding: 20px;
+    position: relative; 
+    top: -450px;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.slideshow-container1 .prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none; 
+}
+
+.slideshow-container2 .prev, .next{
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.slideshow-container1 .next {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;  
+}
+
+.slideshow-container1 .prev {
+    position: absolute; 
+    top: 70%;
+    left: 3%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;  
+}
+
+.slideshow-container2 .next {
+    position: absolute; 
+    top: 100%;
+    left: 95%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;  
+}
+
+.slideshow-container2 .prev {
+    position: absolute; 
+    top: 100%;
+    left: 65%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;  
+}
+
+  
+  /* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.wishlist {
+    background-color: #422745;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    padding: 70px;
+}
+
+.presents {
+    text-align: center;
+    margin: 30px 0;
+    white-space: nowrap;
+    padding: 20px;
+}
+.row {
+    display: flex;
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+ 
+footer {
+    background-color: #443B45;
+    text-align: center;
+    padding: 10px;
+    color: white; 
+}
+
+/* about me css styles */
+
+.about h1{
+    border: solid;
+    font-size: 26px;
+    text-align: center;
+}
+
+.about img{
+    max-width:35%;  
+    position: relative;
+    left: 700px;
+    top: 100px;
+    border: solid 0.5px;
+}
+
+.about main{
+    border: solid 0.5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-display: block; 
+    max-width: 500px;
+    padding: 10px;
+    position: relative;
+    left: 100px;
+    top: -350px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 2000px){
+    
+    .meetme{
+        position: absolute; 
+        top: 940px;
+        left: 1475px;
+     }
+
+    .slideshows { 
+        max-width: 2000px;
+    }
+    
+    .photos h2 {
+        font-size: 30px;
+    }
+    
+    .photos h3{
+        position: absolute;
+        left: 850px; 
+    }
+    
+    .passions p{
+        position: absolute;
+        left: 850px; 
+        max-width: 300px;
+        font-size: 20px;
+    }
+    
+    .image-container2{
+        position: relative; 
+        top: -950px;
+    }
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 94%;
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 94%;
+    }
+
+    .wishlist {
+        font-size: 30px;
+        padding: 70px;
+    }
+
+}
+
+@media screen and (max-width: 1700px){
+    
+    .meetme{
+        position: absolute; 
+        top: 740px;
+        left: 1200px;
+     }
+
+    .slideshows { 
+        max-height: 1600px;
+        max-width: 1700px;
+    }
+    
+    .photos h3{
+        position: absolute;
+        top: 500px;
+        left: 700px; 
+    }
+    
+    .passions p{
+        position: absolute;
+        top: 500px;
+        left: 700px; 
+    }
+    
+    .image-container2{
+        position: relative; 
+        top: -650px;
+    }
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 78%;
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 78%;
+    }
+
+}
+
+@media screen and (max-width: 1600px){
+    .meetme{
+        position: absolute; 
+        top: 650px;
+        left: 1100px;
+     }
+
+     .photos h3{
+        position: absolute;
+        top: 500px;
+        left: 575px; 
+    }
+    
+    .passions p{
+        position: absolute;
+        top: 500px;
+        left: 575px; 
+    }
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 70%;
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 70%;
+    }
+
+    .image-container2{
+        position: relative; 
+        top: -450px;
+    }
+
+
+}
+
+@media screen and (max-width: 1400px){
+    
+    .meetme{
+        position: absolute; 
+        top: 575px;
+        left: 950px;
+     }
+
+    .slideshows { 
+        max-height: 1100px;
+        max-width: 1400px;
+    }
+    .photos h3{
+        position: absolute;
+        top: 400px;
+        left: 500px; 
+    }
+    
+    .passions p{
+        position: absolute;
+        top: 400px;
+        left: 500px; 
+    }
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 63%;
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 63%;
+    }
+
+    .image-container2{
+        position: relative; 
+        top: -350px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .meetme{
+        position: absolute; 
+        top: 440px;
+        left: 900px;
+     }
+
+     section.slideshows { 
+        max-height: 900px;
+    }
+
+     .photos h3{
+        position: absolute;
+        top: 350px;
+        left: 400px; 
+    }
+    
+    .passions p{
+        position: absolute;
+        top: 350px;
+        left: 400px; 
+        max-width: 200px;
+    }
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 65%;
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 65%;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+
+    .slideshows { 
+        max-height: 1100px;
+        max-width: 960px;
+    }
+  
+    /* about me bit  */
+    
+    .about main{
+        position: relative;
+        left: 60px;
+        top: -250px;
+    }
+    
+    .about img {
+        position: relative; 
+        left: 600px;
+    }
+  }
+
+@media screen and (max-width: 700px){
+
+    .meet img{
+        max-width: 70%;
+        position: relative; 
+        top: -5px; 
+        left: 10px;
+    }
+    .meetme{
+        font-size: 10px;
+        position: absolute; 
+        top: 290px; 
+        left: 515px; 
+    }
+
+    a{
+        border-width: 1px;
+        padding: 4px;
+        font-size: 8px;
+        display: inline-block;
+        position: absolute;
+        top: 35px; 
+        max-width:40px;
+    }
+
+    .photos h2 {
+        text-align: center;
+        font-size: 16px;
+        padding:20px;
+    }
+
+    .photos h3{
+        position: absolute;
+        top: 200px;
+        left: 25px; 
+        font-size: 10px;
+    }
+    
+    .passions p{
+        max-width: 50px;
+        position: absolute;
+        top: 210px;
+        left: 25px; 
+        font-size: 8px;
+    }
+
+    .image-container1{
+        text-align:center;
+        padding: 20px;
+    }
+    
+    .image-container2{
+        text-align:center;
+        padding: 20px;
+        position: relative; 
+        top: 0.25px;
+    }
+
+    .slideshows { 
+        max-height: 1100px;
+        max-width: 700px;
+    }
+
+
+    .slideshow-container1 .next {
+        position: absolute;
+        top: 30%;
+        left: 67%;
+        width: auto;
+        padding: 8px;
+        margin-top: -22px;  
+    }
+
+    .slideshow-container1 .prev {
+        position: absolute; 
+        top: 30%;
+        left: 29%;
+        width: auto;
+        padding: 8px;
+        margin-top: -22px;  
+    }
+
+    .slideshow-container2 .next {
+        position: absolute; 
+        top: 50%;
+        left: 67%;
+        width: auto;
+        padding: 8px;
+        margin-top: -22px;  
+    }
+
+    .slideshow-container2 .prev {
+        position: absolute; 
+        top: 50%;
+        left: 29%;
+        width: auto;
+        padding: 8px;
+        margin-top: -22px;  
+    }
+
+    .wishlist {
+        font-size: 10px;
+        padding: 20px;
+    }
+
+    .presents {
+        white-space: normal;
+        padding: 10px;
+    }
+
+    .row p {
+        font-size: 10px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+    
+    .about main{
+        max-width: 300px;
+        position: relative; 
+        left: 20px;
+    }
+    
+    .about img {
+        position: relative; 
+        top: 100px; 
+        left: 400px;
+    }
+    
+}
+
+    @media screen and (max-width: 560px){
+
+    .meetme{
+        font-size: 8px;
+        position: absolute; 
+        top: 125px; 
+        left: 275px; 
+    }
+
+    a{
+        border-width: 1px;
+        padding: 2px;
+        display: inline-block;
+        position: absolute;
+        top: 30px; 
+        max-width:60px;
+    }      
+
+    .slideshow-container1 .prev, .slideshow-container1 .next {
+        padding: 7px;
+        font-size: 10px;
+        margin-left: -2.5px;
+    }
+    
+    .slideshow-container2 .prev, .slideshow-container2 .next{
+        padding: 7px;
+        font-size: 10px;
+        margin-left: -2.5px;
+      }
+
+      /* about me bit */
+     
+    .about h1{
+        max-width: 560px;
+    }
+    
+    .about {
+        max-height: 1500px;
+    }
+    
+    .about main{
+        max-width: 150px;
+        padding: 10px;
+        position: relative; 
+        top: 15px;
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+    .about img {
+        position: absolute; 
+        top: 100px; 
+        left: 220px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .meetme{
+        position: absolute; 
+        top: 135px; 
+        left: 320px; 
+    }
+}

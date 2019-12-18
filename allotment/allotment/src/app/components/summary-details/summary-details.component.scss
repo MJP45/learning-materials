@@ -1,0 +1,66 @@
+@import "./src/variables.scss"; 
+@import "./src/mixins.scss"; 
+
+section { 
+    width: 100%; 
+    background-color: white;
+
+    #scenario-header {
+        font-weight: bolder;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding: $base-spacing * 2; 
+        background-color: $primary-color; 
+        color: white; 
+    }
+
+    div { 
+        width: 100%; 
+        height: 100%;
+        background-color: white;
+
+        .title { 
+            font-size: 1.2rem;
+            background-color: $primary-color; 
+            color: white; 
+
+            h3 {
+                padding: $base-spacing * 2; 
+                @include flex-row(space-between);
+
+                fa-icon {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .project {
+            padding-bottom: $base-spacing * 2;
+        }
+        
+        ul.details-box { 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: $panel-height;
+            padding: 0 $base-spacing;
+            
+            li { 
+                margin: $base-spacing;
+
+                span {
+                    font-weight: bold;
+                }
+
+                &:before { 
+                    color: $primary-color; 
+                    display: inline-block; 
+                }
+            }
+        } 
+    }
+}

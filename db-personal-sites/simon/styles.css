@@ -1,0 +1,259 @@
+/* CSS reset  */
+body, u1, li, h1, h2, a {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+/* Default background color - used for "white space" to the right of the main section,
+ used when browser window is over the max width */
+body {
+    background-color: #e3e8e7;
+}
+
+
+/* Nav section */
+.nav-container {
+    position: relative;
+}
+
+nav {
+    background-color: #e3e8e7;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 40px;
+    line-height: 1.7em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #4b4b4b;
+}
+
+nav li a:hover { 
+    text-decoration: underline;
+} 
+
+
+/* Main section */
+.main-container {
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    width: 1250px;
+
+}
+
+main {
+    position: absolute;
+    left: 224px;
+    background-color: #BBC9C5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+article, form {
+    margin: 20px 30px;
+    position: relative;
+    overflow: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+article p {
+    margin: 0;
+    line-height: 1.4em;
+    float: left;
+    width: 48%;
+}
+
+article img {
+    float: right;
+    width: 48%;
+}
+
+footer p {
+    margin: 0;
+    margin-top: 20px;
+    text-align: right;
+    border-top: 1px solid black;    
+    padding: 10px 30px;
+    font-size: 14px;
+}
+
+
+/* Quiz specific */
+.correct-answer {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect-answer {
+    color: red;
+    font-weight: bold;
+}
+
+#grade-picture {
+    max-width: 500px;
+}
+
+/* Media queries - for smaller screen sizes */
+
+/* At this width, make nav bar take up less width on the page and reduce font of name */
+@media screen and (max-width: 950px) {
+    nav {
+        padding: 30px;
+        padding-bottom: 100%;
+    } 
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    main {
+        left: 184px;
+    }
+}
+
+/* At this width, make the pictures that accompany each article take up less width in the article */
+@media screen and (max-width: 900px) {
+    article p {
+        float: left;
+        width: 64%;
+    }
+    
+    article img {
+        float: right;
+        width: 34%;
+    }
+
+}
+
+/* At this width, move article pictures to be underneath words, rather than next to. Centre footer. */
+@media screen and (max-width: 750px) {
+    article p {
+        float: none;
+        width: 100%;
+    }
+    
+    article img {
+        float: none;
+        width: 100%;
+    }
+
+    article p {
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+}
+
+/* At this width, remove nav bar and move main links/name to top of page. Hide article shortcuts.
+Made nav bar stick to the top of the page (z-index) */
+@media screen and (max-width: 610px) {
+    nav {
+        padding: 10px 25px;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+    }
+    
+    .space {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0px;
+        margin-top: 0;
+        line-height: 1em;
+    }
+
+    main {
+        left: 0;
+        top: 38px;
+    }
+
+    .main-links {
+        float:right;
+        width: 50%;
+        margin: 0;
+    }
+
+    .main-links li {
+        width: 31.7%;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .article-links li {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1em;
+        float: left;
+    }
+}
+
+/* At this width, reduce font size for links in mav bar */
+@media screen and (max-width: 450px) {
+    .main-links li {
+        font-size: 0.8em;
+    }
+
+}
+
+/* At this width, move nav links to underneath name. Nav bar does not stick to the top of the page when scrolling down */
+@media screen and (max-width: 410px) {
+
+    nav {
+        padding-bottom: 0;
+        z-index: 0;
+    }
+
+    .main-links {
+        float: none;
+        width: 100%;
+    }
+
+    .main-links li {
+        display: inline-block;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    h1 {
+        float: none;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    main {
+        top: 70px;
+    }
+}

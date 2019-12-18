@@ -1,0 +1,10 @@
+<section class="main-data">
+  <div class="searchbar-project-title-container">
+  <h2>Projects</h2>
+      <app-search-bar
+        (handleSearch)="filterProjects($event)"
+        [placeholderText]="placeholderText">
+      </app-search-bar>
+  </div>
+  <app-projects-list [projects]="filteredProjects"></app-projects-list>
+</section>

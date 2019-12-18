@@ -1,0 +1,53 @@
+<section class="container">
+    <form #registrationForm="ngForm" (ngSubmit)="handleRegistrationForm(registrationForm.value)">
+        <h2>New User Registration</h2>
+        <fa-icon [icon]="faUser"></fa-icon>
+        <label for="firstName"></label>
+        <input class="qa-first-name" type="text" id="firstName" name="firstName" #firstName="ngModel" ngModel required
+            [class.valid]="firstName.valid" [class.invalid]="firstName.invalid && !firstName.pristine" placeholder="*First name" />
+        <div *ngIf="!firstName.pristine && firstName.errors">
+            <p class="error" *ngIf="firstName.errors['required']">
+                First name is a required field
+            </p>
+        </div>
+        <label for="lastName"></label>
+        <input class="qa-last-name" type="text" id="lastName" name="lastName" #lastName="ngModel" ngModel required placeholder="*Last name" [class.valid]="lastName.valid" [class.invalid]="lastName.invalid && !lastName.pristine"/>
+        <div *ngIf="!lastName.pristine && lastName.errors">
+            <p class="error" *ngIf="lastName.errors['required']">
+                Last name is a required field
+            </p>
+        </div>
+        <label for="email"></label>
+        <input class="qa-email" type="email" name="email" id="email" #email="ngModel" ngModel required email [class.valid]="email.valid"
+            [class.invalid]="email.invalid && !email.pristine" placeholder="*Email">
+        <div *ngIf="!email.pristine && email.errors">
+            <p class="error" *ngIf="email.errors['required']">Email is required</p>
+            <p class="error" *ngIf="email.errors['email']">Email is invalid</p>
+        </div>
+        <label for="password"></label>
+        <input class="qa-password" type="text" placeholder="*Password" minlength="6" maxlength="12" name="password" #password="ngModel"
+            ngModel pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required password
+            [class.valid]="password.valid" [class.invalid]="password.invalid && !password.pristine">
+        <div *ngIf="!password.pristine && password.invalid">
+            <p class="error" *ngIf="password.errors['required']">Password is required</p>
+            <p class="error" *ngIf="password.errors['pattern']">Password must contain one uppercase, one lowercase
+                character and one number
+            </p>
+            <p class="error" *ngIf="password.errors['minlength'] && !password.errors['pattern']">Password must be
+                minimum 6
+                characters</p>
+        </div>
+        <label for="confirmPassword"></label>
+        <input class="qa-confirm-password" type="text" placeholder="*Confirm password" minlength="6" maxlength="12" name="confirmPassword" #confirmPassword="ngModel"
+            ngModel required password
+            pattern="{{ password.value }}" 
+            [class.valid]="confirmPassword.valid" [class.invalid]="confirmPassword.invalid && !confirmPassword.pristine">
+        <div *ngIf="!confirmPassword.pristine && confirmPassword.invalid">
+            <p class="error" *ngIf="confirmPassword?.errors.required">Password is required</p>
+            <p class="error" *ngIf="confirmPassword?.errors.pattern">Passwords must match
+            </p>
+        </div>
+        <input class="qa-button" type="submit" [disabled]="registrationForm.invalid" value="Register" [routerLink]="['/home']">
+        <p routerLink="/login" class="link">Existing user?<fa-icon [icon]="faSignInAlt"></fa-icon></p>
+    </form>
+</section>

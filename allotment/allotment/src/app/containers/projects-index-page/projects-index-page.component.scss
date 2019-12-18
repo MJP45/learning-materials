@@ -1,0 +1,85 @@
+@import "../../../variables.scss";
+@import "../../../styles.scss";
+
+div {
+  font-family: $font-family;
+
+  header {
+    padding: $base-spacing * 2 $base-spacing * 3;
+
+    h1 {
+      font-size: 3em;
+    }
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: $base-spacing * 3 0;
+    width: 100%;
+    background-color: #EEEEEE;
+
+    @include md {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .notes {
+      width: 46.5%;
+      height: 350px;
+      background-color: white;
+      margin-left: $base-spacing * 3;
+
+      @include md {
+        width: 90%;
+        margin-bottom: $base-spacing*2;
+        margin-left: 0;
+      }
+    }
+
+    .testing-status {
+      width: 46.5%;
+      height: 350px;
+      background-color: white;
+      margin-right: $base-spacing * 3;
+
+      @include md {
+        width: 90%;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .main-data {
+    padding: $base-spacing * 2.5 0px;
+
+    h2 {
+      font-size: 2em;
+      padding: 0px $base-spacing * 3 $base-spacing * 2 $base-spacing * 3;
+    }
+
+    .accordion {
+      width: 95%;
+      height: 400px;
+      margin: auto auto;
+    }
+    .feature-header-wrapper { 
+      width: 95%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto auto;
+      
+      .feature-header-title-search{
+        margin-bottom: $base-spacing; 
+        
+        h2 {
+          margin-bottom: $base-spacing; 
+          padding: 0;
+        }
+      }
+    }
+  }
+}

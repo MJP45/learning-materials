@@ -1,0 +1,24 @@
+<section class="opaque-modal-wrapper">
+<section class=diffViewerWrapper>
+    <h2>Snapshot Difference - {{ diff.new.snapshot.project.name }} </h2>
+    <div class="diffWrapper">
+        <div class="featureContainer">
+            <h3>Removed Features</h3>
+            <p>Snapshot Details:</p>
+            <p>Created By: {{ diff.old.snapshot.createdBy }}</p>
+            <p>Created On: {{ diff.old.snapshot.dateTime }}</p>
+            <app-project-features [isList]="true" [features]="diff.old.removedFeatures"
+                [featureTitleFontSize]="featureTitleFontSize" [isViewingSnapshot]="true">
+            </app-project-features>
+        </div>
+        <div class="featureContainer">
+            <h3>Added Features</h3>
+            <p>Snapshot Details:</p>
+            <p>Created By: {{ diff.new.snapshot.createdBy }}</p>
+            <p>Created On: {{ diff.new.snapshot.dateTime }}</p>
+            <app-project-features [isList]="true" [features] ="diff.new.addedFeatures" [featureTitleFontSize]="featureTitleFontSize" [isViewingSnapshot]="true"
+                ></app-project-features>
+        </div>
+    </div>
+</section>
+</section>

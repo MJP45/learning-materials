@@ -1,0 +1,182 @@
+html {
+    background-color:#2e2e2e;
+  }
+  body, ul, li, h1, h2, h3, h4, a{
+      font-family: Arial;
+  }
+  div.side_bar {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+      overflow-x: hidden;
+      padding-top: 20px;
+      align-content: center;
+  }
+  div.portrait {
+      text-align: center;
+  }
+  div.portrait img {
+      width: 80%;
+      position: sticky;
+  }
+  nav {
+      text-align: left;
+      position: sticky;
+  }
+  ul.nav {
+      margin: 10px 20px;
+      border-radius: 12px;
+      list-style-type: none;
+      line-height: 100px;
+  }
+  li.nav_list a{
+      /* background-color: grey; */
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 25px;
+      text-decoration: none;
+      color: #f5f0f0;
+  }
+  li.nav_list a:hover {
+      background-color: slategray;
+  }
+  main, footer{
+    margin-left: 22%; /* Force to be just after the side nav */
+}
+h2 {
+    text-align: center;
+    color:#f5f0f0;
+}
+article span.first_word{
+    color:#000000;
+    font-weight: bold;
+}
+p.first_p {
+    text-align: center;
+}
+div.txt_box {
+    background-color: #dad6d6;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    margin-right: 25px;
+}
+div.slideshow-container{
+    border: solid;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    background-color: #dad6d6;
+    padding: 10px;
+    align-content: center;
+}
+
+div.my_slides img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.prev {
+    left: 10%
+}
+
+.next{
+    left: 90%;
+}
+
+.prev:hover, .next:hover{
+    color: #dad6d6;
+    background-color: #000000;
+}
+
+div p.caption_text{
+    position: right;
+    background-color: #dad6d6;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer{
+    background-color: #000000;
+    font-size: 12px;
+    text-align: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #f5f0f0;
+}
+
+
+/* slide transition animation */
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 0.9}
+  }
+  
+  @keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 0.9}
+  }
+/*  ----------------------- Screen adjustments --------------------- */
+@media screen and (max-width: 400px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 650px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 1000px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 18px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}

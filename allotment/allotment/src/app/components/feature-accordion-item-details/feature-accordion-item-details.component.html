@@ -1,0 +1,4 @@
+<div class="description-container" >
+    <p (click)="handleClick()" [ngStyle]="{'font-size.px': featureTitleFontSize }">{{scenario.name}}</p>
+    <p [ngClass]="getClass()"  [ngStyle]="{'font-size.px': featureTitleFontSize }"> {{ scenario.testStatus }}</p>
+</div>

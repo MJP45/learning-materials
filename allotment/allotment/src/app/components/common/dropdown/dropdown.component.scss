@@ -1,0 +1,26 @@
+@import '../../../../variables.scss';
+
+.dropdown {
+  width: auto;
+  min-width: 150px;
+  max-width: 450px;
+  height: auto;
+  max-height: 400px;
+  display: block;
+  background-color: $light-gray;
+
+  .listitem {
+    padding: $base-spacing/2;
+    font-size: 1em;
+   
+
+    &:hover {
+      background-color: $secondary-color;
+      color: black;
+    }
+  }
+}
+
+.selected {
+  font-weight: bolder;
+}

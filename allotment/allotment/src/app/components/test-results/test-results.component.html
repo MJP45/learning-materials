@@ -1,0 +1,22 @@
+<div class="testCardWrapper">
+    <h3 (click)="textBoxClick()">Testing Status  <fa-icon [icon]="faChevron"></fa-icon></h3>
+    <div class="contentWrapper" *ngIf="testsOpen">
+      <div class="box">
+        <div class="green" [ngStyle]="{ width: green }"></div>
+        <div class="yellow" [ngStyle]="{ width: yellow }"></div>
+        <div class="red" [ngStyle]="{ width: red }"></div>
+        <div class="grey" [ngStyle]="{ width: grey }"></div>
+      </div>
+      <div class="textWrapper">
+        <ul>
+          <li *ngIf="isProject"><span>Project Status:</span> {{ projectStatus }}</li>
+          <li><span>Total:</span> {{ results.Passed + results.Failed + results.Pending + results.Undefined }}</li>
+          <li><span>Passed:</span> {{ results.Passed }}</li>
+          <li><span>Pending:</span> {{ results.Pending }}</li>
+          <li><span>Failed:</span> {{ results.Failed }}</li>
+          <li><span>Undefined:</span> {{ results.Undefined }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+

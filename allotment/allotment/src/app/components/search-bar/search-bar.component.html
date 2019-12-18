@@ -1,0 +1,4 @@
+<div>
+  <input #search type="text" [placeholder]="placeholderText"  (keydown.enter)="handleSearch.emit(search.value)">
+  <button (click)="handleSearch.emit(search.value)">Search</button>
+</div>

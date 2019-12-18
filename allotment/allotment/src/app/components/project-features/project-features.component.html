@@ -1,0 +1,10 @@
+<section *ngIf="isList">
+  <app-feature-accordion-item *ngFor="let objFeature of features"
+    [feature]="objFeature" [featureTitleFontSize]="featureTitleFontSize" [isViewingSnapshot]="isViewingSnapshot">
+  </app-feature-accordion-item>
+</section>
+<section class="feature-piece-grid-container" *ngIf="!isList">
+  <app-feature-card [feature]="objFeature"
+    *ngFor="let objFeature of features" [routerLink]="[newUrl, objFeature.id]"
+    [queryParams]="{isViewingSnapshot: isViewingSnapshot}" [isViewingSnapshot]="isViewingSnapshot"></app-feature-card>
+</section>

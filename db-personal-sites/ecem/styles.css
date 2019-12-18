@@ -1,0 +1,617 @@
+h1 {
+    color: black;
+    font-size: 36px;
+    font-family: monospace;
+}
+
+p.intro {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+}
+
+.button:hover {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+.button2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 12px;
+  }
+
+  .button2:hover {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: monospace;
+    border-radius: 12px;
+    opacity: 0.7;
+  }
+
+
+  img.avatar {
+    border-radius: 50%;
+    width: 105px;
+    height: 100px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  img.avatar2 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  img.avatar3 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 30%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  } 
+
+  a.aboutlink {
+    color: black;
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  a.aboutlink:hover {
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: underline;
+    opacity: 0.7;
+  }
+
+  a.photoslink {
+    color: black;
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  a.photoslink:hover {
+    color: black;
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: underline;
+    opacity: 0.7;
+  }
+
+  
+
+  a.randomlink {
+    color: black;
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  a.randomlink:hover {
+    color: black;
+    font-family: monospace;
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: underline;
+    opacity: 0.7;
+  }
+
+  
+
+  #homeDiv {
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+    position: fixed;
+    top: 65%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  #homeDiv2 {
+    width: 200px;
+    height: 100px;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 20px;
+    position: fixed;
+    top: 85%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url("dance.gif");
+    background-size: 200px;
+    width: 200px;
+    height: 100px;
+  }
+
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Exo", sans-serif;
+    color: rgb(236, 202, 163);
+    background: linear-gradient(-45deg, #eed8b8, #d8bc9c, #ffecd6, #ffffff);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: 300;
+  }
+  
+  h3 {
+    color: rgb(240, 212, 181);
+    font-weight: 100;
+  }
+  
+  h5 {
+    color:#eee;
+    font-weight:300;
+  }
+  
+  a
+  a:hover {
+    text-decoration: none;
+    color: #ddd;
+  }
+
+  h1.randomTitle {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: monospace;
+    font-weight: bold;
+  }
+
+  button.randomButt {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+  }
+
+  
+ 
+  
+ img.arrow {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 51%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+ }
+
+ img.arrow2 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 40%;
+  left: 29%;
+  transform: translate(-50%, -50%);
+ }
+
+ #homeRightDiv {
+  width: 300px;
+  height: 200px;
+  border: 5px solid black;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 55%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-image: url("confetti.gif")
+}
+
+p.intro {
+  color: black;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+h2 {
+    color: black;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+img.star {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+ }
+
+ img.star2 {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+ }
+
+ img.star3 {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ img.star4 {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+ }
+
+ img.star5 {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+ }
+
+ #leftSideDiv {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 65%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+
+button.buttonHome {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+}
+
+button.buttonHome:hover {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+
+div.aboutDiv {
+  width: 700px;
+  height: 600px;
+  border: 5px solid black;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+  background: url("ocean.gif");
+  background-size: cover; 
+  opacity: 0.8;
+}
+
+
+div.aboutText {
+  width: 700px;
+  height: 600px;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 50%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+}
+
+p.aboutParagraph {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: monospace;
+}
+
+img.arrow3 {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 9%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+ }
+
+ div.aboutSideDiv {
+  width: 200px;
+  height: 600px;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 50%;
+  left: 87%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: inline-block;
+ }
+
+ marquee {
+  color: black; 
+  font-family: monospace;
+  text-shadow: 2px 2px 5px black;
+}
+
+#countdown {
+  font-size: 16px;
+  font-family: monospace; 
+}
+
+
+#homeLeftDiv2 {
+  display: none;
+}
+
+
+#leftHomeButton { 
+  position: fixed;
+  top: 45%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+}
+
+#leftHomeButton:hover { 
+  position: fixed;
+  top: 45%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+#homeLeftDiv2 {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  margin: 20px;
+  position: fixed;
+  top: 52%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  color: black;
+}
+
+#randomFact {
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+  opacity: 0.7;
+}
+
+#randomFactHeader {
+  font-size: 20px;
+  font-family: monospace;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+#randomFactButton { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: monospace;
+  border-radius: 12px;
+}
+
+#factDisplay {
+  font-size: 14px;
+  font-family: monospace;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+
+
+
+
+ @media screen and (max-width: 1400px){
+ 
+ }

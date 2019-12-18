@@ -1,0 +1,52 @@
+<div class="project-show-page">
+  <header>
+    <div class="snapshot-and-title-wrapper">
+      <app-summary-title [title]="project.name"></app-summary-title>
+      <div class="snapshot-wrapper">
+        <app-snapshot-selector [projectId] = "project.id" [snapshots]="snapshots" (handleCreateSnapshot)="handleCreateSnapshot()"
+        (handleSnapshotSelected)="handleSnapShotSelected($event)">
+        </app-snapshot-selector>
+        <div class="diff-wrapper">
+          <button id="diff-toggle" (click)="handleDiffButtonClick()">View Snapshot Difference</button>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb-wrapper">
+      <app-breadcrumb></app-breadcrumb>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="notes" >
+      <app-summary-details [project]="project"></app-summary-details>
+    </div>
+    <div class="testing-status">
+      <app-test-results [project]="project"></app-test-results>
+    </div>
+  </section>
+  <section class="main-data">
+    <div class="feature-header-wrapper">
+      <div class="feature-header-wrapper-title">
+        <div class="feature-header-title-search">
+          <h2>Total Features: {{ numberOfFeatures }}</h2>
+        </div>
+      </div>
+      <div class="feature-header-info-wrapper">
+        <app-toggle-switch (handleClick)="toggleView()"></app-toggle-switch>
+        <app-search-bar
+          placeholderText="Search for a feature"
+          (handleSearch)="handleFeatureSearch($event)">
+        </app-search-bar>
+      </div>
+    </div>
+    <app-diff-viewer [diff]="diff" *ngIf="showDiff"></app-diff-viewer>
+    <h4>New features: {{diff.new.addedFeatures.length}} | Removed features: {{diff.old.removedFeatures.length}}</h4>
+    <div class="accordion">
+      <app-project-features
+        [isList]="isList"
+        [features]="filteredFeatures"
+        [isViewingSnapshot]="isViewingSnapshot"
+        ></app-project-features>
+    </div>
+  </section>
+</div>

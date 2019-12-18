@@ -1,0 +1,24 @@
+@import '../../../../variables.scss';
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: $base-spacing*2 $base-spacing*3;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    text-align: left;
+    font-family: $font-family;
+    color: black;
+    padding:  $base-spacing;
+    font-weight: bold;
+    font-size:1.5em;
+}
+
+.search {
+    margin: $base-spacing $base-spacing*3;
+}

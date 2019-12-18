@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head tag contains metadata about this html document, such as title, description, keywords, viewport ect. -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link to a web font (one way of loading custom fonts) -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <!-- Adding link to Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Need to link to stylesheets in the head tag -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>World Changers</title>
+</head>
+
+<!-- body is where the html content goes -->
+
+<body>
+  <!-- h1 is your primary header for the page. This has SEO impact. 
+    header represents our header section on the page which might contain more than just a h1 -->
+  <header id="page-header">
+    <i id="menu-button" class="fa fa-bars" onclick="toggleMenu()"></i>
+    <h1 id="desktop-h1"><a href="index.html"><img src="images/change.png">World Changers</a></h1>
+    <h1 id="mobile-h1"><a href="index.html"><img src="images/change.png">WC</a></h1>
+  </header>
+  <nav id="main-nav" class="hide">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tech.html">Our work</a></li>
+      <li><a href="people.html">Our people</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- main is for the main content of the page. It should be for the important content of the page -->
+  <main>
+    <section class="jumbotron">
+      <h2>Inspiring a nation through outstanding transformation</h2>
+      <p>Changing the world one doorstep at a time</p>
+      <nav>
+        <a href="#product" class="btn btn-primary">Read more</a>
+        <a href="specsheet.pdf" target="_blank" class="btn btn-outline">Download now</a>
+      </nav>
+    </section>
+
+    <section id="product">
+      <img src="images/macbook.png">
+      <h2>Technological change, redefined</h2>
+      <p>
+        We have laptops, and we know how to use them. Partner with us today to globally change your transformation
+        goals for the better - with no mess.
+      </p>
+      <a href="tech.html" class="btn btn-primary">Read more</a>
+    </section>
+  </main>
+
+  <footer>Created with love by _nology.io
+    <!-- Using a span rather than div as we want to group and style these items while keeping them inline-->
+    <span class="social">
+      <a href="http://www.facebook.com"><i class=" fa fa-facebook"></i></a>
+      <a href="http://www.twitter.com"><i class=" fa fa-twitter"></i></a>
+      <a href="http://www.instagram.com"><i class=" fa fa-instagram"></i></a>
+      <a href="http://www.linkedin.com"><i class=" fa fa-linkedin"></i></a>
+    </span>
+  </footer>
+  <!-- Put javascript file at the bottom of the body. So it doesn't block rendering of HTML while it loads -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

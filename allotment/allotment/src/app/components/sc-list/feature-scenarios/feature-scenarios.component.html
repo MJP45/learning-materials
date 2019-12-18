@@ -1,0 +1,14 @@
+<div class='title'>
+    <h1>{{ feature.name }} | Total Scenarios: {{ feature.scenarios.length }}</h1>
+    <app-toggle-switch (handleClick)="toggleShown()"></app-toggle-switch>
+    </div>
+    <div class='search'>
+    <app-search-bar placeholderText="Search for a scenario or step" (handleSearch)="handleScenarioSearch($event)"></app-search-bar>
+  </div>
+    <div *ngIf="aShown">
+      <app-scenario-accordion [scenarios]="filteredScenarios" ></app-scenario-accordion>
+    </div>
+    <div *ngIf="!aShown">
+      <app-scenario-card-container [scenarios]='filteredScenarios'></app-scenario-card-container>
+    </div>
+    

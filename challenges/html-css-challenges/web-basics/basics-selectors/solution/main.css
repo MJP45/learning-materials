@@ -1,0 +1,39 @@
+* {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: red;
+  margin: 10px;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+div {
+  border: solid 2px black;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  color: blue;
+}
+
+#text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#green-font {
+  color: green;
+}

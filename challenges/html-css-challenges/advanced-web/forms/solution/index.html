@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Form & webhook challenge</h1>
+      <form
+        action="http://webhook.site/e5f05f0c-298f-4048-b506-1afa8b58b0c0"
+        target="_blank"
+        method="POST"
+      >
+        <div id="form-fields">
+          <fieldset id="details">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First name"
+              class="block"
+              required
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last name"
+              class="block"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              class="block"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="6"
+              placeholder="Password - 6 letters (upper & lower)"
+              class="block"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+            <legend class="label" for="gender">Gender:</legend>
+            <input
+              type="radio"
+              name="gender"
+              value="male"
+              class="click-input"
+              checked
+            />
+            Male<br />
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              class="click-input"
+            />
+            Female<br />
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              class="click-input"
+            />
+            Other<br />
+          </fieldset>
+          <fieldset>
+            <textarea
+              rows="10"
+              name="about"
+              id="about"
+              placeholder="Something interesting about you..."
+              class="block"
+            ></textarea>
+            <label class="label" for="graduation">Date of graduation:</label>
+            <input
+              class="block"
+              type="date"
+              id="graduation"
+              name="graduation"
+              max="2019-05-25"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend class="label" for="vehicle"
+              >Do you own a:</legend
+            >
+            <input
+              type="checkbox"
+              name="vehicle"
+              value="Bike"
+              class="click-input"
+              id="bike"
+            />
+            Bike<br />
+            <input
+              type="checkbox"
+              name="vehicle"
+              value="Car"
+              class="click-input"
+              id="car"
+            />
+            Car<br />
+            <input
+              type="checkbox"
+              name="vehicle"
+              value="Lambretta"
+              class="click-input"
+              id="lambretta"
+            />
+            Lambretta<br />
+          </fieldset>
+        </div>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>

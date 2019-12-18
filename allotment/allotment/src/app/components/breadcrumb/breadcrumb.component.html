@@ -1,0 +1,8 @@
+<section>
+    <h4 routerLink=""> Home </h4>
+    <span class="breadcrumb-slash" >/</span>
+    <h4 [routerLink]="[projectUrl]"> {{projectName}} </h4>
+    <span class="breadcrumb-slash" *ngIf="projectExists">/</span>
+    <h4 [routerLink]="[featureUrl]"> {{featureName}} </h4>
+</section>
+

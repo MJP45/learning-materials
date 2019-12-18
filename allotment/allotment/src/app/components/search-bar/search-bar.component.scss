@@ -1,0 +1,22 @@
+@import "../../../variables.scss";
+@import "../../../styles.scss";
+@import "./src/mixins.scss";
+
+div {
+  display: flex;
+  flex-direction: row;
+
+  input {
+    height: 32px;
+    width: 200px;
+    padding: 0 $base-spacing;
+
+    @include xs {
+      width: 150px;
+    }
+  }
+
+  button {
+    @include primary-button;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jquery challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <h1>Show content</h1>
+      <div id="content">
+        <section>
+          <button id="section-hide">Hide sections</button>
+        </section>
+        <section id="edit-sec">
+          <div>
+            <input type="text" id="edit" />
+            <button onClick="editText(edit.value)">Edit content</button>
+            <button id="color-change">Change colour</button>
+          </div>
+          <h3 id="output">Edited text here</h3>
+        </section>
+        <section>
+          <div>
+            <button id="fade-btn">Fade in div</button>
+            <button id="animate-btn">Animate div</button>
+          </div>
+          <div id="fade-div"></div>
+        </section>
+        <section>
+          <h3>Extension TBC</h3>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>

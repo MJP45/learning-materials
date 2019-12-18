@@ -1,0 +1,151 @@
+
+
+header h2{
+    margin-left : 10%;
+    white-space: normal;
+}
+ 
+p{
+    margin-left : 10%; 
+    white-space: normal;
+}
+
+form {
+    margin-top  : 5%;
+    margin-left : 10%;
+    white-space : normal;
+    
+}
+
+form input, form textArea {
+    display   : block;
+    margin    : 2% 0;
+    
+}
+
+textarea{
+    resize  : both;
+    overflow: auto;
+    width   : 60%;  
+}
+
+.buttonWrapper {
+   
+    width       : 60%;
+    text-align  : right;
+    display     : inline-block;
+}
+
+
+
+.bottomGraphicWrapper{
+    margin-top      : 1%;
+    text-align      : center;
+    padding-left    : 2%;
+    
+  
+  }
+
+/* no longer needed as the thank you page has been replaced with a popup, left in to be consistent with previous submission
+  purpose is to create some space between content on the page
+
+.pushDown{
+    margin  :17% 10%;;
+    display : inline-block;
+}
+
+.pushDown div{
+    margin-top  : 5%;
+}
+
+*/
+
+
+/*==============================================================================
+    styles to control the popup
+==============================================================================*/
+.popupWrapper{
+    width               : 50%;
+    height              : 70%;
+    opacity             : .95;
+    display             : none;
+    background-color    : lightgray;
+    top                 : 10%;
+    left                : 20%;
+    position            : fixed;
+    box-shadow          : 20px 10px 25px gray;
+    border-radius       : 2em;
+
+}
+div .popUp{
+    
+    width           : 80%;
+    padding         : 1% ;
+    background-color: whitesmoke;
+    margin-left     : 10%;
+    margin-top      : 15%;
+    border          : 2px solid darkblue;
+    border-radius   : 2em;
+
+}
+
+.popUp li{
+    margin-left : 5%;
+    
+}
+/* target the button wrapper to change the width to push the buttons on the popup form closer to the right hand side */
+.popUp div{
+    width : 90%;
+    
+}
+/*==============================================================================
+  Validation styles
+ ==============================================================================
+*/
+
+.invalidField{
+    border : 2px dotted red;
+}
+
+.validationMsg{
+    color       : red;
+    font-size   : 0.8em;
+    margin-left : 0;
+    margin-top  : -13px;
+    padding     : 0px;
+    display     : 'none';
+    margin-bottom: -4px;
+
+}
+
+
+/*==============================================================================
+    Responsive Styles
+  ==============================================================================
+*/
+
+@media screen and (max-width: 1290px){
+  
+.pageTitle{
+    margin-left : 15%;
+    font-size   : 16px;
+}
+form div{
+    text-align  : center;
+}
+
+}
+
+
+@media screen and (max-width: 790px){
+  
+    .pageTitle{
+         white-space: normal;
+        margin-left : 4%;
+        font-size   : 14px;
+    }
+
+    form div{
+        text-align  : left;
+    }
+    }

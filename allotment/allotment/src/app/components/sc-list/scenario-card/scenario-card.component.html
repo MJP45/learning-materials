@@ -1,0 +1,9 @@
+<div class="acc-piece">
+    <h3 class="scenario-name">{{ scenario.name }}</h3>
+    <h3 [ngClass]="[scenario.testStatus.toLowerCase(), 'scenario-status']">
+        {{ scenario.testStatus }}
+    </h3>
+    <div class="card-description">
+         <p class="step" *ngFor="let step of mergedSteps">{{ step }}</p>
+    </div>
+</div>

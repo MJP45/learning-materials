@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="About Phil Yeung">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Phil Yeung</title>
+        <link href="https://fonts.googleapis.com/css?family=Capriola&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img class="sun" src="images/sun.jpg" alt="Sun image not found">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#goals">Goals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="change_theme_text">click to change themes</p>
+        </header>
+        <section class="blurb">
+                <img class="cloud_1" src="images/cloud.jpg" alt="Cloud image not found">
+                <h1>Phil Yeung</h1>
+                <p>Developer in training</p>
+                <img class="cloud_2" src="images/cloud.jpg" alt="Cloud image not found">
+                <img class="house_pic" src="images/house.jpg" alt="House image not found">
+        </section>
+        <main>
+            <hr class="content_rule">
+            <h2 id="about">About Me</h2>
+            <article class="about">
+                <img class="boxing" src="images/boxing.jpg" alt="Boxing image not found">
+                <h3>Interests</h3>
+                <p>I'm passionate about boxing having boxed (on and off!) for 20 years. I became a boxing coach at University and went on to work as a coach for a boxing charity when I graduated from University.</p>               
+            </article>
+            <hr class="content_rule">
+            <h2 id="background">Background</h2>
+            <article class="background">
+                <img class="leeds" src="images/leeds.jpg" alt="Leeds image not found">
+                <h3>Education</h3>
+                <p>Having left school with A-Levels in Politics, English Language and Literature and Religious Studies, I went to Leeds University to study English Language & Literature.</p>
+            </article>
+            <hr class="content_rule">
+            <h2 id="career">Career</h2>
+            <article class="career">
+                <img class="ibm" src="images/ibm.jpg" alt="IBM image not found">
+                <h3>IBM</h3>
+                <p>Leaving University I joined IBM's graduate scheme as an "IT Consultant." I stayed with IBM for 4 years, working on projects whereby I supported client applications. Each role required little technical ability, but prioritised client handling soft skills. </p>
+                <hr class="career_rule">
+                <img class="nomura" src="images/nomura.jpg" alt="Nomura image not found">
+                <h3>Nomura</h3>
+                <p>After leaving IBM, I joined Investment Banking working for Nomura. For 3 years, I worked as an Application Support Specialist for the Equity Derivatives asset class. I worked alongside front office traders in a high pressure environment, ensuring the applications they use to trade and hedge risk were stable whilst investigating any risk or pricing issues.</p>                
+                <hr class="career_rule">
+                <img class="deutsche" src="images/deutsche.jpg" alt="DB image not found">
+                <h3>Deutsche Bank</h3>
+                <p>In 2014, I moved to Deutsche Bank as an Equity Derivatives Risk Application Specialist, continuing in the same asset class I'd previously worked on at Nomura. I've been working over the last year to learn Python in order to automate the application environment.</p>
+            </article>
+            <hr class="content_rule">
+            <h2 id="goals">Goals</h2>
+            <article class="goals">
+                <h3>What I'd like to achieve @ Nology</h3>
+                <p>To have the confidence to call myself a developer! </p>
+                <img class="computer" src="images/computer.jpg" alt="Computer image not found">
+            </article>
+            <hr class="content_rule">
+            <h2 id="sign">Sign Up</h2>
+            <article class="sign_up">
+                <h3>Want to hear more?</h3>
+                <p class="sign_up_paragraph">If you'd like to follow all the mundane aspects of my life, enter your details below to receive newsletters and spam mail.</p>
+                <form name="sign_up_form" onsubmit="sign_up_validation();return false">
+                    <table>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" name="first_name"></td>
+                        </tr>
+                        <tr>
+                            <td>Surname:</td>
+                            <td><input type="text" name="surname"></td>
+                        </tr>
+                        <tr>
+                            <td>email:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" class="submit_button"></td>
+                        </tr>
+                    </table>
+                </form>
+                <p display="none" id="sign_up_confirmation"></p>
+            </article>
+        </main>
+        <footer>
+            <h2 id="contact">Contact Me</h2>
+            <a href="mailto:philyeung3@gmail.com?Subject=Hi!" class="email_button">Send email</a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+@import "src/variables";
+
+.search {
+  // margin: $base-spacing * 2;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  grid-gap: 20px;
+  // justify-content: center;
+  padding: 20px 0;
+  // padding-left: $base-spacing * 2;
+
+  .movie {
+    height: $card-height;
+    width: $card-width;
+  }
+}

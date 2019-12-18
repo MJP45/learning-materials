@@ -1,0 +1,23 @@
+{
+  "name": "solution-files",
+  "version": "1.0.0",
+  "description": "Solution files for session challenges",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nology-tech/solution-files.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nology-tech/solution-files/issues"
+  },
+  "homepage": "https://github.com/nology-tech/solution-files#readme",
+  "devDependencies": {
+    "htmlhint": "^0.10.1",
+    "sass": "^1.17.0"
+  }
+}

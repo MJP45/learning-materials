@@ -1,0 +1,10 @@
+@import "./src/variables.scss"; 
+@import "./src/mixins.scss";
+.title-wrapper{
+  width: 100%;
+
+  h1 {  
+    padding: 0px;
+    @include primary-heading;
+  }
+}

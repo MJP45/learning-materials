@@ -1,0 +1,13 @@
+input {
+  width: 250px;
+  font-size: 1.25em;
+  padding: 0.25em;
+  padding-left: 0;
+  border: none;
+  border-bottom: 2px solid burlywood;
+
+  &:focus {
+    border-bottom-color: yellow;
+    outline: none;
+  }
+}

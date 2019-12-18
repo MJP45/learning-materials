@@ -1,0 +1,7 @@
+<div *ngIf="isProject" class="title-wrapper">
+   <h1>{{title}}</h1>
+</div>
+
+<div *ngIf="!isProject" class="title-wrapper">
+    <h1>{{primaryTitle}}: {{ title }}</h1>
+</div>

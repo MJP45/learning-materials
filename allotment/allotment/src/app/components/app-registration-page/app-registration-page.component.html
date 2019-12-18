@@ -1,0 +1,52 @@
+<section>
+    <div class="column-left"></div>
+  
+    <div class="column-main">
+      <form #contactForm="ngForm" (ngSubmit)="handleSubmit(contactForm.value)" *ngIf="!isSubmitted">
+        <h2>Register Your Project</h2>
+        <p class="intro">
+          Please provide details below to produce an API token to connect your app with the Allotment.
+        </p>
+        <label for="projectName">Name Of Project:</label>
+        <input placeholder="Enter Your Project Name Here..." type="text" id="projectName" name="projectName"
+          #projectName="ngModel" ngModel required [class.valid]="projectName.valid && isUniqueName" [class.invalid]="
+            (!isUniqueName || projectName.invalid) && !projectName.pristine
+          " #project (input)="checkUniqueProjectName(project.value)" />
+  
+        <div class="error-box" *ngIf="!projectName.pristine && projectName.errors">
+          <p class="error" *ngIf="projectName.errors['required']">
+            Project name is required
+          </p>
+        </div>
+        <div class="error-box" *ngIf="!isUniqueName">
+          <p>
+            Project name is taken, please choose another project name. Project
+            name is not case sensitive.
+          </p>
+        </div>
+  
+        <label>BitBucket Repository Name:</label>
+        <input placeholder="Enter Your Repository Name Here..." type="text" id="bitBucketName" name="bitBucketName"
+          #bitBucketName="ngModel" ngModel required [class.valid]="bitBucketName.valid && isUniqueBitBucketName"
+          [class.invalid]="
+            (!isUniqueBitBucketName || bitBucketName.invalid) &&
+            !bitBucketName.pristine
+          " #bitBucket (input)="checkUniqueBitBucketName(bitBucket.value)" />
+        <div class="error-box" *ngIf="!isUniqueBitBucketName">
+          <p>
+            Bit Bucket name is already in use.
+          </p>
+        </div>
+  
+        <input type="submit" name="Submit Project" value="Submit Project" [disabled]="contactForm.invalid"/>
+      </form>
+      <div *ngIf="isSubmitted" class="tokenHolder">
+      <h3>Please use this token</h3>
+      <p #tokendisplay>{{ uniqueToken }}</p>
+      <a href=""><button>Return to Home Page</button></a>
+  
+      </div>
+    </div>
+  
+    <div class="column-right"></div>
+  </section>

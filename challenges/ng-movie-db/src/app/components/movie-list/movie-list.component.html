@@ -1,0 +1,12 @@
+<div class="search">
+  <app-search-bar (handleSearch)="filterMovies($event)"></app-search-bar>
+</div>
+<section class="movies">
+  <div
+    class="movie"
+    *ngFor="let movie of filteredMovies"
+    [routerLink]="['/movie', movie.id]"
+  >
+    <app-movie-card [movie]="movie"></app-movie-card>
+  </div>
+</section>

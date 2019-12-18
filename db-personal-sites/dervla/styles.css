@@ -1,0 +1,443 @@
+/*CSS Style sheet for Dervla's website*/
+/*CSS reset of design*/
+body, ul, li, h1, h2, a{ 
+    margin:0;
+    padding: 0;
+    font-family: Georgia;
+}
+
+/*Common styles for each webpage*/
+header{
+  background-color: #615d6c;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.banner{
+    position: static;
+    background-color: #cae5ff;
+    height: 250px;
+    top: 130px;
+}
+.banner .welcome{
+    color: white;
+    padding: 30px;
+    position: relative;
+    display:inline-block;
+    left: 300px;
+    top: 150px;
+}
+.banner h2{
+    color:white;
+    font-size: 30px;
+    text-align: left;
+    float: left;
+}
+.banner h2 span{
+    font-size: 1.3em;
+    color: #fac8cd;
+    display: inline-block;
+    padding: 10px;
+}
+nav{
+    background-color: #cae5ff;
+    padding: 20px;
+    position: sticky;
+    top: 130px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+}
+nav li{
+    width: 12%;
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.about{
+    color: #615d6c;
+}
+.sticky-logo{
+    position: relative;
+    top: -100px;
+    margin: none;
+    padding: none;
+    z-index: 0;
+}
+.social-media{
+    width: 5%;
+    font-size: 20px;
+}
+
+/*Homepage styles (also shares styles for the other pages, for example images and headers)*/
+main.home{
+    background-color: #6f8ab7;
+    color: white;
+    max-width: 100%;
+    width: 1500px;
+    height: 1000px;
+    margin: auto; /*Auto will work for any size screen*/
+    padding: 0 50px;
+    box-sizing: border-box; /*makes the max width include the padding - doesn't go off the page with smaller screens!*/
+}
+article h2{
+    color: #fac8cd;
+    font-size: 48px;
+    text-align: center;
+}
+article p{
+    line-height: 2em;
+    color: white;
+    margin-top: 50px
+}
+.first-image{
+    text-align: center;
+    margin: 80px 0;
+    width: 40%;
+    margin: 20px 5%;
+    float: left;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap; /*Need to add this in the parent so that the images will go side by side now*/
+}
+.images li{
+    display: inline-block;
+    width: 20%;
+    margin: 20px 5%;
+}
+.images li img{
+    max-width: 100%;
+}
+.icons li{
+    display: inline-block;
+    width: 33%;
+}
+.icons li i{
+    display: inline-block;
+    border-radius: 60px;
+    border: solid black;
+    box-shadow: 0px 0px 2px black;
+    padding: 0.5em 0.6em;
+}
+
+#username-button{
+    font-family: Georgia;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 12px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+section h2{
+    color:#6f8ab7;
+    font-size: 32px
+}
+section.about{
+    color: #6f8ab7;
+    max-width: 100%;
+    width: 1500px;
+    margin: auto; /*Auto will work for any size screen*/
+    padding: 100px 40px;
+    box-sizing: border-box; /*makes the max width include the padding - doesn't go off the page with smaller screens!*/
+}
+section.course{
+    color:#6f8ab7;
+    max-width: 100%;
+    width: 1500px;
+    height: 700px;
+    margin: auto; /*Auto will work for any size screen*/
+    padding: 100px 40px;
+    box-sizing: border-box; /*makes the max width include the padding - doesn't go off the page with smaller screens!*/
+}
+section.course p{
+    margin-top: 200px;
+}
+section.favourites{
+    color: #6f8ab7;
+    max-width: 100%;
+    width: 1500px;
+    height: 800px;
+    margin: auto; /*Auto will work for any size screen*/
+    padding: 100px 40px;
+    box-sizing: border-box; /*makes the max width include the padding - doesn't go off the page with smaller screens!*/
+}
+section.favourites h3{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    padding: none;
+}
+.caption h3{
+    text-align: center;
+    max-width: 100%;
+}
+.caption{
+    width: 100%;
+    white-space: pre-line;
+}
+section.contact{
+    background: #cae5ff;
+    text-align: center;
+    padding: 60px 50px;
+    height: 600px;
+    color: #4b4b4b;
+}
+section.contact h2{
+    font-size: 36px;
+    text-align: center;
+    padding: none;
+}
+section.contact img{
+    text-align: center;
+    margin: 80px 0;
+    width: 40%;
+    margin: 20px 5%;
+    float: left;
+}
+section.contact p{
+    margin-top: 150px
+}
+.link-1{
+    color: white;
+    background-color: #fac8cd;
+    margin-left: 750px;
+    text-decoration: none;
+    border: 2px solid #fac8cd;
+    border-radius: 10px;
+}
+.link-2{
+    color: white;
+    background-color: #fac8cd;
+    margin-left: 270px;
+    text-decoration: none;
+    border: 2px solid #fac8cd;
+    border-radius: 10px;
+}
+form.email input{
+    font-family: Georgia;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid white;
+}
+textarea{
+    font-family: Georgia;
+    color: #615d6c;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 28px;
+    border: 4px solid white;
+    width: 500px;
+    height: 100px;
+}
+footer{
+    background: #615d6c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Other pages styles*/
+main.pages{
+    background-color: #6f8ab7;
+    color: white;
+    max-width: 100%;
+    width: 1500px;
+    margin: auto; /*Auto will work for any size screen*/
+    padding: 0px 50px;
+    height: auto;
+    box-sizing: border-box; /*makes the max width include the padding - doesn't go off the page with smaller screens!*/
+}
+main.pages h3{
+    font-size: 30px;
+    text-decoration: underline;
+}
+/*about me page styles*/
+main.about-p{
+    height: 2000px;
+}
+img.arrow{
+    margin: auto;
+    position: absolute;
+    padding: 0 550px;
+    z-index: 0;
+}
+.about-section-l{
+    padding: 100px 300px;
+    margin: 0;
+}
+.about-section-l ul{
+    float: left;
+    width: 40%;
+}
+.about-section-r{
+    padding: 100px 300px;
+    margin: 0px -200px;
+}
+.about-section-r ul{
+    float: right;
+    width: 40%;
+}
+
+/*_nology page styles*/
+main.course-p{
+    height: 2400px;
+}
+.course-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    padding: none;
+    text-align: center;
+}
+.course-section-l{
+    padding: 100px 0;
+}
+.course-section-l .first-image{
+    float: left;
+    width: 30%;
+}
+.course-section-r{
+    padding: 100px 0;
+}
+.course-section-r .first-image{
+    float: right;
+    width: 30%;
+}
+
+/*contact page styles*/
+main.contact-p{
+    height: 1000px;
+}
+
+/*favourites page styles*/
+main.favourites-p{
+    height: 3500px;
+}
+
+/*pseudo classes*/
+nav li a:hover{ /*this will tag the elements when we hover over them*/
+    text-decoration: underline;
+    background-color: #fac8cd;
+    padding: 3px;
+}
+.images li:hover{
+    position: relative;
+    top: -4px;
+}
+form.email input:focus{ /*will tag the elements when field is in focus*/
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form.email input:valid{ /*will style when this element is valid*/
+    border: 4px solid #fac8cd;
+}
+nav li:first-child{ /*will style the first child of the pseud class*/
+    font-weight: bold;
+}
+.first-image:hover{
+    position: relative;
+    top: -4px;
+}
+.contact img:hover{
+    position: relative;
+    top: -4px;
+}
+
+/*pseudo elements*/
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.course p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+p::selection{
+    background-color: #fac8cd;
+    color: white;
+}
+
+/*responsive styles*/
+@media screen and (max-width: 1000px){ /*media query; if its 1000px or less then I want these styles to apply.*/
+    .banner .welcome h2{    
+       font-size: 48px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){ /*Used for mobiles.*/
+/*main page*/
+    .banner .welcome{    
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        left: 0px;
+        top: 150px;
+    }
+    section.favourites{
+        height:1800px;
+    }
+    .sticky-logo{
+        display:none; /*Do not display logo*/
+    }
+    .banner .welcome h2{    
+        font-size: 25px;
+     }
+     .banner .welcome span{    
+        font-size: 1em;
+     }
+     .images li{
+         width: 50%;
+         margin: 20px auto;
+         display: block;
+     }
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    nav{
+        position: sticky;
+        top: 110px;
+    }
+    .social-media{ /*Do not display social media*/
+        display: none
+    }
+/*about page*/
+img.arrow{
+    display: none;
+}
+.about-section-l{
+    padding: 100px 0px;
+}
+
+.about-section-r{
+    margin: 0px -300px;
+}
+.about-section-r ul{
+    float: right;
+    width: 40%;
+}
+/*favourties page*/
+    main.favourites-p{
+        height: 6500px;
+    }
+
+}

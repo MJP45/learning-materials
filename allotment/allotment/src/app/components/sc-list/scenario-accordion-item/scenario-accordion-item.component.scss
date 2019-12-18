@@ -1,0 +1,76 @@
+@import '../../../../variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: $font-family;
+}
+
+.acc-piece { 
+    background-color: $secondary-color;
+    opacity: 1;
+    color: white;
+    padding: $base-spacing*2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 2px;
+    height: 80px;
+    @media screen and (max-width:550px) {
+        height: 200px;
+    }
+
+    h3 {
+        &:nth-of-type(2) {
+        width: 10%;
+        
+        @media screen and (max-width:550px) {
+            width: 30%;
+        }
+    }
+        &:first-of-type {
+            width: 40%;
+            font-size: 20px;
+        }
+    }
+
+    &:hover {
+        opacity: 0.7;  
+    };
+
+    .scenario-status {
+        border-radius: 2px;
+        padding: $base-spacing;
+        width: $base-spacing*10;
+        text-align: center;
+        font-size: 20px;
+
+        &.passed {
+            background-color: $cta-color;
+        }
+
+        &.pending {
+            background-color: yellow;
+        }
+
+        &.failed {
+            background-color: red;
+        }
+
+        &.untested {
+            background-color: $dark-gray;
+        }       
+    }
+}
+
+.description-container {
+    .step {
+        padding: $base-spacing $base-spacing*4;
+    }
+}
+

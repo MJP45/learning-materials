@@ -1,0 +1,9 @@
+<div class="panel">
+  <app-side-panel
+    (handleResetClick)="removeFilters()"
+    (handleSearch)="filteredList = filterBySearch($event)"
+  ></app-side-panel>
+</div>
+<div class="list">
+  <app-book-list [books]="filteredList"></app-book-list>
+</div>

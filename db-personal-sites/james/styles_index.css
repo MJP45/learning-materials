@@ -1,0 +1,193 @@
+html {
+  background-color:#000000;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+body, ul, li, h1, h2, h3, h4, a{
+    font-family: Arial;
+}
+div.side_bar {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+    align-content: center;
+}
+div.portrait {
+    text-align: center;
+}
+div.portrait img {
+    width: 80%;
+    position: sticky;
+}
+nav {
+    text-align: left;
+    position: sticky;
+}
+ul.nav {
+    margin: 10px 20px;
+    border-radius: 12px;
+    list-style-type: none;
+    line-height: 100px;
+}
+li.nav_list a{
+    /* background-color: grey; */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #f5f0f0;
+}
+li.nav_list a:hover {
+    background-color: slategray;
+}
+div.curtain {
+  width: 80%; /* To align with the welcome text beneath */
+  overflow: hidden; 
+  position:fixed; /*To allow other content to exist behind it*/
+
+}
+div.curtain__wrap {
+  width: 100%;
+  height: 100%;
+}
+div.curtain_panel {
+  background: #000000;
+  width: 80%; 
+  height: 100vh; 
+  position: fixed; 
+  top: 0px;
+  z-index: 2;
+  align-content:center;
+}
+p.curtain_text {
+    color: #dad6d6;
+    text-align: center;
+    font-size: 36px;
+    background-color: transparent;
+}
+
+main, footer{
+    margin-left: 22%; /* Force to be just after the side nav */
+}
+h2 {
+    text-align: center;
+    color:#f5f0f0;
+}
+article span.first_word{
+    color:#000000;
+    font-weight: bold;
+}
+p.first_p {
+    text-align: center;
+}
+div.txt_box {
+    background-color: #dad6d6;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 25px;
+    text-align: left;
+}
+div.img_box {
+    background-color: #dad6d6;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: left;
+    margin-right: 25px;
+}
+div.img_box img{
+    width: 100%;
+}
+.SM_links {
+    background-color: #dad6d6;
+    font-weight: bold;
+    display: flex; /*Not using inline block now so using justify later will center this*/
+    padding: 1px;
+    border-radius: 5px;
+    margin-right: 25px;
+    width:100%;
+}
+.SM_links ul {
+    white-space: nowrap;
+    max-width: 100%;
+    justify-content: space-evenly;
+    background-image: none;
+}
+.SM_links li{
+    width: 5%;
+    display: inline-block;
+    justify-content: space-evenly;
+}
+.SM_links img:hover {
+    opacity: .5;
+    border: #000000;
+}
+footer{
+    background-color: #000000;
+    font-size: 12px;
+    text-align: right;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #f5f0f0;
+}
+
+/*  ----------------------- ANNIMATIONS --------------------- */
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 1} 
+    to {opacity: 0}
+  }
+  
+  @keyframes fade {
+    from {opacity: 1} 
+    to {opacity: 0}
+  }
+
+/*  ----------------------- Screen adjustments --------------------- */
+@media screen and (max-width: 400px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 12px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 650px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 15px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}
+@media screen and (max-width: 1000px){
+    li.nav_list a{
+        padding: 10px;
+        font-size: 18px;
+        text-align: left;
+    }
+    ul.nav {
+        margin: 10px 5px;
+        padding-inline-start: 0px;
+    }
+}

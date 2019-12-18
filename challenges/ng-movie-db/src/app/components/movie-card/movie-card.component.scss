@@ -1,0 +1,24 @@
+@import "src/variables.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid gray 2px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+
+  h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+  }
+
+  img {
+    height: 70%;
+    width: 100%;
+  }
+}

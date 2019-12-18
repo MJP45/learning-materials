@@ -1,0 +1,42 @@
+header h2{
+    margin-left : 10%;
+}
+ 
+header h4{
+        margin-left : 10%;
+}
+
+
+.what_mainContent div{
+    margin-left : 12%;
+    width       : 80%;
+    white-space : normal;
+}
+
+
+.what_mainContent ul{
+    margin-left : 12%;
+}
+
+
+
+.bottomGraphicWrapper{
+    margin-top      : 1%;
+    text-align      : center;
+    padding-left    : 2%;
+    
+  
+  }
+
+/*==============================================================================
+    Responsive Styles
+  ==============================================================================
+*/
+@media screen and (max-width: 1040px){
+
+    header h4{
+        white-space:normal;
+        margin-left : 10%;
+        margin-right: 10px;
+}
+}

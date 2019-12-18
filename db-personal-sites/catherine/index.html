@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catherine Q </title>
+</head>
+<body>
+    <a name="top"></a>
+    <header>
+        <section class="banner">
+            <img id="bannerPic" src="img/banner2 pic.jpg" alt = "banner showing London skyline">
+            <div class = "my_name">
+                <h1 class="my_full_name">Catherine Quilley</h1>
+                <h2 class = "my_slogan">Excited to meet you all</h2>
+            </div>
+        </section>
+    </header>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="#about_me" class="catherine">Catherine</a></li>
+            <li><a href="#background" >Background</a></li>
+            <li><a href="#nology" >Course Aims</a></li>
+            <li><a href="#hobby" >Hobbies</a></li>
+            <li><a href = "#top" onclick="annotateSkyline()">Toggle Skyline</a></li>
+        </ul>
+    </nav>
+
+    <a name = "about_me">
+    <section class="about_me_container">
+        <div class="about_me"> 
+                <h2>About me</h2>
+                <img src="img/pic of me.JPG">
+                <p>
+                    Residing between Bermondsey and Dagenham, I am a Londoner born and raised and currently into my 8th year of working in Finance.
+                </p>
+
+            </div>           
+      
+    </section>
+   </a>
+
+   <a name = "background">
+    <section class="background_container">
+            <div class="my_background"> 
+                    <h2>Background</h2>
+                    </div>
+                    <div class = 'uni_and_work'>
+                            
+                        <ul class = "graduation_and_work">
+                            <li>
+                                    <h3>University</h3>
+                                <img src="img/graduation.JPG" alt = "graduation picture" >
+                                <p>
+                                        B.A English Literature<br>
+                                        MSC Computing and information systems<br>
+                                        <p class="university_name">Queen Mary, University of London
+                                        </p>
+                                        </p>
+                                </li>
+                                <li>
+                                        <h3>Work</h3>
+                                        <img src="img\the hackathon cropped.png" alt = "Hackathon pic" >
+                                            <p>
+                                            After 4 years in other places<br> I've been in my current Business Analyst role for 3.5 years <br>I did a Hackathon with work and that's what got me coding 
+                                            </p>
+                                </li>
+                             
+                        </ul>
+                        
+                    </div>
+                  
+                </div>           
+          
+    
+    </section>
+    </a>
+
+    <a name = "nology">
+        <section class = "nology_container">
+            <h2>Aims for this course</h2>
+            <div class = "goals_container">
+                <button class="accordion">Combine Creativity with Technical Skill</button>
+                <div class="panel">
+                  <p>
+                    I enjoy being creative and like making things and I'd love to do this with greater technical skills<br>
+                     <br>
+                     In work so far, the projects I have been most proud of have been those where I have created something and this creation has helped those it was created for.
+                     <br>
+                     <br>
+                     The world of design is a great example of where Art meets Science and Egineering. The same applies to creating great software and I hope to balance these two elements to make practical, functional and innovative products.
+                     
+                  </p>
+                </div>
+                
+                <button class="accordion">Learn Software Egineering Methodology</button>
+                <div class="panel">
+                  <p>To code well is a valuable skill I'm keen to develop but to construct functional, maintainable software is a skill I can't build alone. <br>
+                    <br>
+                   I want to work with a team to learn through mistakes and successes what good software engineer methedology is and apply that. 
+                    <br>
+                    
+                    </p>
+                </div>
+                
+                <button class="accordion">Take lessons back to the workplace</button>
+                <div class="panel">
+                  <p>I want to take what I learn back to the workplace and apply that in whatever team I become a member of so I can help improve development practices </p>
+                </div>
+        </div>
+        </section>
+
+    </a>
+
+    <a name = "hobby">
+         <section class = "hobby_container">
+                    <h2>Hobbies</h2>
+                    <div class="slideshow-container">
+
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 4</div>
+                          <img src="img/my guitar.png" style="width:100%">
+                          <div class="text">Playing music
+                            <audio controls>
+                                <source src="media/guitar.mp3" type="audio/mpeg">
+                              Your browser does not support the audio element.
+                              </audio>
+                          </div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 4</div>
+                          <img src="img/me climbing.jpg" style="width:100%">
+                          <div class="text">Rock Climbing</div>
+                        </div>
+                      
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 4</div>
+                          <img src="img/stand up.jpg" style="width:100%">
+                          <div class="text">Stand up comedy </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="img/gin and PS4.jpg" style="width:100%">
+                            <div class="text">Video Games</div>
+                        </div>
+                      </div>
+                      <br>
+                      
+                      <!-- The dots/circles -->
+                      <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                      </div>
+                      
+        </section> 
+    </a>
+    <script src=animation.js></script>
+
+    <footer>
+        <p class = "footer">Thanks!</p>
+        <a href = "#top" > back to top</a>
+    </footer>
+
+</body>
+</html>

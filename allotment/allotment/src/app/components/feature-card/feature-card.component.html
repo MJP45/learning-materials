@@ -1,0 +1,11 @@
+<section class="grid-card">
+    <h3 class="feature-name">{{ feature.name }}</h3>
+    <app-feature-status-and-sign-off [feature]="feature" [featureTitleFontSize]="20" [isViewingSnapshot]="isViewingSnapshot"></app-feature-status-and-sign-off>
+    <div class=card-content-holder> 
+        <p class="feature-count">Total Scenarios : {{ feature.scenarios.length }}</p>
+        <p>Total Passed : {{numberOfPassed}}</p>
+        <p>Total Pending : {{numberOfPending}}</p>
+        <p>Total Failed : {{numberOfFailed}}</p>
+        <p>Total Untested : {{numberOfUndefined}}</p>
+    </div> 
+</section> 

@@ -1,0 +1,17 @@
+<div class="acc-piece" (click)="toggleDescription()">
+    <h3 class="scenario-name" [ngStyle]="{'font-size.px': featureTitleFontSize }">{{ feature.name }}</h3>
+    <h3 class="scenario-count"  [routerLink]="[newUrl, feature.id]" [ngStyle]="{'font-size.px': featureTitleFontSize }" [queryParams]="{isViewingSnapshot: isViewingSnapshot}">{{ feature.scenarios.length }} Scenarios <fa-icon [icon]="faArrowRight" [ngStyle]="{'font-size.px': featureTitleFontSize-4 }"></fa-icon></h3>
+    <app-feature-status-and-sign-off [feature]="feature" (handleSignOffClick)="handleSignOff($event)" [featureTitleFontSize]="featureTitleFontSize" [isViewingSnapshot]="isViewingSnapshot"></app-feature-status-and-sign-off>
+    <p *ngIf="!isShowing"><fa-icon [icon]="faChevronDown"></fa-icon></p>
+    <p *ngIf="isShowing"><fa-icon [icon]="faChevronUp"></fa-icon></p>
+  
+  </div>
+  <div *ngIf="isShowing">
+    <app-feature-accordion-item-details
+      *ngFor="let objScenario of feature.scenarios"
+      [scenario]="objScenario"
+      (handleScenarioClick)="handleClick($event)"
+      [featureTitleFontSize]="featureTitleFontSize"
+    ></app-feature-accordion-item-details>
+  </div>
+  

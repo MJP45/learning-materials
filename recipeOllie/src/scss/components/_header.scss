@@ -1,0 +1,7 @@
+header {
+  width: 100vw;
+  height: calc(100vh - #{$navbar-height});
+  background-image: url("/assets/header.jpg");
+  background-size: cover;
+  margin-top: $navbar-height;
+}

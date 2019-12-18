@@ -1,0 +1,21 @@
+<section>
+
+  <div class="rhs-options">
+    <div class="drop-down" (blur)="isClicked = !isClicked" (mouseleave)="isClicked = !isClicked">
+       Snapshot
+      <div  class="snapshot-select">
+        <p *ngIf="!snapshotCreated">
+            No snapshots yet
+        </p>
+        <p *ngIf="snapshotCreated">Active version
+          <fa-icon (click)="handleChevronClick()" [icon]="faChevronDown"></fa-icon>
+        </p>
+      </div>
+      <span>
+        <app-dropdown *ngIf="isClicked" [list]="snapshots" [selectedItem]="selectedItem"
+          (handleListItemClick)="handleLiClick($event)"></app-dropdown>
+      </span>
+    </div>
+    <button [disabled]="isSnapshot" (click)="createSnapshot()">Create Snapshot</button>
+  </div>
+</section>

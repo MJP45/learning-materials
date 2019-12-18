@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About James</title>
+    <link rel="stylesheet" href="styles_about.css">
+</head>
+<body>
+    <div class="side_bar">
+        <div class="portrait">
+            <img src="img/Home_James.png" alt="Portrait">
+        </div>
+        <nav class="nav_list">
+            <ul class="nav">
+                <li class="nav_list"><a href="index.html" class="home">Welcome</a></li>
+                <li class="nav_list"><a href="about.html" class="about">About</a></li>
+                <li class="nav_list"><a href="interests.html"  class="hobbies">Interests</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+            <article class="article">
+                <h2>About James</h2>
+                <div class="txt_box">
+                    <p class="first_p"><span class = "first_word">Welcome</span> to the “About” section of my website. On this page, you can read more about me and my background. Scroll through different bits of information about me using the arrow buttons in the box below.</p>
+                </div>
+                
+                <br>
+
+                <div class="slideshow-container">
+                    <div class="my_slides fade">
+                        <img src= 'img/about_slides/1_ireland.jpg'  style="width:30%">
+                        <img src= 'img/about_slides/2_Trinity.jfif'  style="width:30%">
+                        <img src= 'img/about_slides/3_Hydrogeology.svg'  style="width:30%">
+                        <img src= 'img/about_slides/4_MM.png'  style="width:30%">
+                        <img src= 'img/about_slides/5_python.jfif'  style="width:30%">
+                        <div>
+                            <p class="caption_text">'I was born in Ireland and lived there for most of my life. I lived in North Dublin, near the sea, in a suburb called Kilbarrack. My family still lives there and I try to visit home when I can, especially now that I have two young nieces and a nephew (I am, of course, their favourite uncle!).'</p>
+                            <p class="caption_text">'At school, I loved studying science and maths, so to pursue science at University seemed an obvious choice! As part of my Natural Science degree (four year Bachelors), I took modules in Chemistry, Biology, Maths and Geology, before specialising in Geology for the final two years. For my dissertation, I spent six weeks on the island of Paros (Greece) mapping a metamorphic core-complex. Extra-curricular activities while studying at Trinity included being on the committee for the University LGBT+ society, chairperson of the geological society, competing for the athletics society at a national level, and holding various roles with the Students Union (class representative and electoral commission member).'</p>
+                            <p class="caption_text">'Hydrogeology (the study of groundwater) was my favourite part of geology, involving much more maths and numerical processing than other areas. I achieved my Masters degree in Hydrogeology at the University of Birmingham in 2016. My dissertation was titled “Development of a 3D numerical groundwater model, simulating chlorinated solvent dissolved plume migration to a river receptor in the Irish Carboniferous Limestone”, for which I achieved a distinction. Numerical modelling was the most interesting part of hydrogeology for me as it could be used to simulate water levels (and therefore inform water supply decisions) and contamination transport (helping to understand the impacts and risks of contamination).'</p>
+                            <p class="caption_text">'I worked for three years as a Hydrogeologist, based in Cambridge, with Mott MacDonald Ltd, an international engineering consultancy company. The projects I worked on included contamination monitoring at boreholes, construction of regional and local groundwater models, secondments to clients offices (Anglian Water Services & Severn Trent Utilities Ltd), project management of long-term water resources planning (Thames Water Utilities Ltd) and bidding for upcoming projects with national regulatory bodies (Environment Agency).'</p>
+                            <p class="caption_text">'In my spare time, I taught myself to use Python. Initially, I intended to speed up and automate certain data processes at work but as I explored further, I found myself enjoying the problem solving aspect of computer programming. I began to work on my own video game (using Pygame) and spent a lot of time reading about different types of projects people posted about on Reddit. Seeing the difference that computer programming skills brought to my previous job, and having enjoyed learning and applying these skills so much, I decided to pursue a career in software development. While Python has introduced to the technology world, I am excited to learn new coding languages and start creating applications and websites (and most likely games, in my spare time).'</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="navigateSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="navigateSlides(1)">&#10095;</a>
+                    </div>
+    
+            </article>
+            <script src = "about.js"></script>
+
+    </main>
+    <footer>
+        <h4>Footer</h4>
+        <p>This website has been made as part of the _nology pre-course work for the Deutsche Bank Tech Accelerator Programme.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div class="acc-piece" (click)="toggleDescription()">
+  <h3 class="scenario-name">{{ scenario.name }}</h3>
+  <h3 [ngClass]="[scenario.testStatus.toLowerCase(), 'scenario-status']">
+    {{ scenario.testStatus }}
+  </h3>
+  <fa-icon [icon]="faChevron"></fa-icon>
+</div>
+<div *ngIf="isShowing" class="description-container">
+  <p class="step" *ngFor="let step of mergedSteps">{{ step }}</p>
+</div>
